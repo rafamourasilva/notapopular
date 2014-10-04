@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Desejo Serviço</title>
+    <meta name="description" content="Login"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml"/>
+    <link rel="stylesheet" 	href="css/estilos.css"/>
+	<link rel="stylesheet" href="fonts/style.css">
+ 	<!-- [if lt IE 9]>
+    	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>        
+	<section id="barra">
+		<section id="wrapper">
+			<ul>
+				<li><a href="cadastro.html">Cadastre-se</a></li>
+				<li>|</li>
+				<li><a href="login.html">Login</a></li>	
+			</ul>
+		</section><!--FIM WRAPPER BARRA-->
+    </section><!--FIM BARRA-->
+    
+    <header>
+		<section id="wrapper">
+			<a href="index.html"><img class="fade" alt="TôQuerendo" src="img/logo.png" /></a>					
+			<div id="pesquisa">
+				<input type="text" placeholder="O que você deseja?"/><br/><br/>
+			</div><br/>
+		</section><!--FIM WRAPPER HEADER-->
+    </header>
+    
+    <section id="conteudo">	
+		 
+			<section id="principal">			
+				<article id="headerPage">	
+						<h2>Escolha o serviço que deseja</h2>				
+				</article>	
+				<!--FIM HEADERPAGE-->
+			<section id="wrapper">   
+				<article id="desejo-servico">
+					
+						<ul id="menuConta" style="display:block;">
+							<li><a href="#meusDados" style="color:#5cb85c;" class="scroll"><span><i class="icon icon-user"></i></span> Veículo</a></li>
+							<li><a href="meus-desejos.html"><span><i class="icon icon-heart"></i></span> Imóvel</a></li>
+							<li><a href="#minhasOfertas" class="scroll"><span><i class="icon icon-briefcase"></i></span> Outros</a></li>
+						</ul>
+							<!--<select id="iptSelect"  required>
+								<option label="Filtrar por..." value="">Filtrar por...</option>
+								<option label="Veículos" value="1">Veículos</option>
+								<option label="Imóveis" value="2">Imóveis</option>
+								<option label="Outros" value="2">Outros</option>
+							</select>-->
+							
+					
+					
+					<hr/>
+					
+					
+					<div id="caracteristicas">
+						<h1>Preencha as características do serviço</h1>
+						<div id="dadosGerais">
+							<div><h1>Dados Gerais</h1></div>
+							<ul>
+								<li>
+									<label>Titulo<br/>
+										<textarea id="iptTxtA" rows="3" placeholder="Digite aqui o título"></textarea>
+									</label>
+								</li>
+								<li>
+									<label>Descrição<br/>
+										<textarea id="iptTxtA" rows="5" placeholder="Descreva aqui o que deseja"></textarea>
+									</label>
+								</li>
+								<li>
+									<label>Envie até 3 imagens do seu desejo *</label><br/><br/>
+									<input type="submit" id="btnSelFoto" name="arquivo1" value="Arquivo1"/><br/>
+									<input type="submit" id="btnSelFoto" name="arquivo2" value="Arquivo2"/><br/>
+									<input type="submit" id="btnSelFoto" name="arquivo3" value="Arquivo3"/><br/>
+									
+								</li>
+								<li>									
+									<p>* Formatos permitidos: jpeg, jpg, gif e png</p>
+									<p>  Tamanho máximo do arquivo 5mb</p>
+									<p>  Resolução ideal: 480 x 720 pixels ou mais</p>
+									<p>  Resolução ideal: 480 x 720 pixels ou mais</p>
+								</li>
+							</ul>
+						</div>	
+						
+						<div id="caractGerais">
+							<div><h1>Características Gerais</h1></div>
+							<ul>
+								<li>
+									<strong>Rádio: </strong>
+										<input type="radio" name="radio"> Opção1
+										<input type="radio" name="radio"> Opção2
+									
+								</li>
+								<li>
+									<strong>Checkbox: </strong>
+										<input type="checkbox" name="opt1"> Opção 1
+										<input type="checkbox" name="opt1"> Opção 2									
+								</li>
+								<li>
+									<ul id="coluna">
+										<li>Input1<input type="text" id="iptTxt" name="input1"/></li>
+										<li>Input2<input type="text" id="iptTxt" name="input2"/></li>
+										<li>Input3<input type="text" id="iptTxt" name="input3"/></li>
+										<li>Input4<input type="text" id="iptTxt" name="input4"/></li>
+										<li>Input5<input type="text" id="iptTxt" name="input5"/></li>
+										<li>Input6<input type="text" id="iptTxt" name="input6"/></li>
+										<li>Input7<input type="text" id="iptTxt" name="input7"/></li>
+										<li>Input8<input type="text" id="iptTxt" name="input8"/></li>
+										<li>Input9<input type="text" id="iptTxt" name="input9"/></li>
+										<li>Input10<input type="text" id="iptTxt" name="input"/></li>
+									</ul>
+								</li>
+								<li>
+									<ul id="coluna">
+										<li><input class="vermelho" type="submit" value="Cancelar"/></li>
+										<li><input class="verde" type="submit" value="Cadastrar"/></li>
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</div>										
+				</article>	
+				<!--------------- FIM DESEJO-SERVICO -------------->	
+			</section>
+			<!--------------- FIM PRINCIPAL -------------->		
+		
+		</section>
+		<!--------------- FIM WRAPPER -------------->
+    
+	</section>
+	<!--------------- FIM CONTEUDO -------------->
+    <footer>
+		<div id="rodape">
+			<section id="wrapper">
+				<div>
+					<ul>
+						<li><h1>Sobre o Tô Querendo</h1></li>
+						<li>
+						
+						<p>Pensando mais a longo prazo, a execução dos pontos do programa pode nos levar a 
+						considerar a reestruturação dos níveis de motivação departamental.</p>
+						
+						<p>O empenho em analisar a contínua expansão de nossa atividade exige a precisão e 
+						a definição dos índices pretendidos.Pensando mais a longo prazo, a execução dos pontos
+						. </p>
+
+						</li>
+					</ul>
+				</div>				
+				<div>
+					<ul>
+						<form action="">
+							<li><h1>Dúvidas? Fale com a gente</h1></li>
+							<li><input id="iptTxt" type="text" placeholder="Nome" required/></li>
+							<li><input id="iptTxt" type="email" placeholder="Email" required/></li>
+							<li><textarea id="iptTxtA" rows="6" cols="50" placeholder="Escreva aqui sua mensagem" required></textarea></li>
+							<span><input id="btnEnviar" type="submit" value="Enviar"/></span>
+							<span><input id="btnLimpar" type="reset" value="Limpar"/></span>
+						</form>
+							<li><br/></li>
+					</ul>
+				</div>
+				
+				<div>
+					<ul>
+						<li><h1>Encontre-nos na internet</h1></li>
+						<li>
+							<p>Pensando mais a longo prazo, a execução dos pontos do programa pode nos levar a 
+							considerar a reestruturação dos níveis de motivação departamental. Não obstante, a 
+							expansão dos mercados mundiais cumpre um papel essencial na formulação.</p>
+						</li>
+						<li>
+							<span class="PretoBranco"><a href="http://www.facebook.com"><img src="img/facebook.png"/></a></span>
+							<span class="PretoBranco"><a href="https://plus.google.com"><img src="img/google+.png"/></a></span>
+							<span class="PretoBranco"><a href="https://twitter.com/"><img src="img/twitter.png"/></a></span>
+							<span class="PretoBranco"><a href="https://br.linkedin.com/"><img src="img/linkedin.png"/></a></span>													
+						</li>
+						<li><br/></li>
+					</ul>
+				</div>
+			</section><!--FIM WRAPPER CONTADOR-->	
+		</div>
+		<h1>
+           	<a href="index.html">
+            <img class="fade" width="200px" alt="Logo TôQuerendo" src="img/logo.png" /></a>
+        </h1>
+    	 &copy; 2013 Rafael Silva - Todos os direitos reservados 
+    </footer>    
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Detalhe item</title>
+    <meta name="description" content="Detalhe Item"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml"/>
+    <link rel="stylesheet" href="css/flexslider.css"/>
+    <link rel="stylesheet" 	href="css/estilos.css"/>
+	<link rel="stylesheet" href="fonts/style.css">
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>-->
+    <script>
+    	!window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>");
+    </script>
+    
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/tab.js"></script>
+	<script>
+    	$(window).load(function(){
+			$(".flexslider").flexslider();	
+			
+		});	
+		
+    </script>
+	
+	<script>
+	
+		$(document).ready(function($) {   
+
+		$('#tabs').tabulous({
+			effect: 'scale'
+		});
+
+		 $('#tabs2').tabulous({
+			effect: 'slideLeft'
+		});
+
+		 $('#tabs3').tabulous({
+			effect: 'scaleUp'
+		});
+
+		$('#tabs4').tabulous({
+			effect: 'flip'
+		});
+
+		});
+	</script>
+	
+
+    
+	<!-- [if lt IE 9]>
+    	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>        
+	<section id="barra">
+		<section id="wrapper">
+			<ul>
+				<li><a href="cadastro.html">Cadastre-se</a></li>
+				<li>|</li>
+				<li><a href="login.html">Login</a></li>	
+			</ul>
+		</section><!--FIM WRAPPER BARRA-->
+    </section><!--FIM BARRA-->
+    
+    <header>
+		<section id="wrapper">
+			<a href="index.html"><img class="fade" alt="TôQuerendo" src="img/logo.png" /></a>					
+			<div id="pesquisa">
+				<input type="text" placeholder="O que você deseja?"/><br/><br/>
+			</div><br/>
+		</section><!--FIM WRAPPER HEADER-->
+    </header>
+    
+    <section id="conteudo">
+		
+				<section id="principal">
+					<section id="wrapper">
+						<article id="migalhaPage">	
+								<ul class="userPro">
+									<li>Felipe Moura</li>
+									<li>tá querendo: </li>
+									<li>Produto</li>
+									<li>></li>
+									<li>Veículo</li>
+									<li>></li>
+									<li>Moto</li>
+								</ul>						
+						</article>
+					</section><!--FIM WRAPPER MIGALHAPAGE-->
+					<article id="headerPage">	
+
+							<h1>Moto Hornet 2009 para final de semana</h1>			
+						
+					</article>						
+				<section id="wrapper">	
+					<article id="galeria-item">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="img/slide-0.png"/>
+								</li>
+								
+								<li>
+									<img src="img/slide-1.jpg"/>
+								</li>        
+							</ul>
+						</div>
+					</article>
+					
+					<article id="detalhe-item">
+						
+							<div id="tabs">
+								<ul>
+									<li><a href="#tabs-1" title="">Destalhes</a></li>
+									<li><a href="#tabs-2" title="">Especificações</a></li>
+									<li><a href="#tabs-3" title="">Chat</a></li>
+								</ul>
+								
+								<div id="tabs_container">
+									<div id="tabs-1">
+										<ul>
+											<li>Descrição resumida do item do desejo, com até cento e quarenta caracteres. Se for digitado texto maior que o permitido, não aparecerá aqui</li><br/>
+											
+											<li class="especificacao"><strong>Detalhe 1: </strong><span>Descrição do detalhe 1</span></li>
+											<li class="especificacao"><strong>Detalhe 2: </strong><span>Descrição do detalhe 2</span></li>
+											<li class="especificacao"><strong>Detalhe 3: </strong><span>Descrição do detalhe 3</span></li>
+											<li class="especificacao"><strong>Detalhe 4: </strong><span>Descrição do detalhe 4</span></li><br/>
+											<li><input type="submit" value="Enviar Oferta"/></li>
+											<li><br/><br/><br/></li>
+										</ul>
+									</div>
+									<div id="tabs-2">
+										<ul>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 1</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 2</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 3</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 4</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 5</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 6</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 7</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 8</li>
+											<li><br/><br/><br/></li>
+										</ul><br/>
+									</div>
+									<div id="tabs-3">
+												<ul>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 1</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 2</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 3</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 4</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 5</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 6</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 7</li>
+											<li class="especificacao"><span><i class="icon icon-checkmark"> </i></span>Especificação 8</li>
+											<li><br/><br/><br/></li>
+										</ul><br/>
+									</div>
+								</div><!--Fim tabs container--> 
+						  </div><!--Fim tabs-->					  
+					</article>
+					<!--------------- FIM DETALHE-ITEM ------------>			
+				</section>
+		</section>
+		<!--------------- FIM WRAPPER -------------->	
+    </section>
+	<!--------------- FIM CONTEUDO-------------->
+    
+    <footer>
+		<div id="rodape">
+			<section id="wrapper">
+				<div>
+					<ul>
+						<li><h1>Sobre o Tô Querendo</h1></li>
+						<li>
+						
+						<p>Pensando mais a longo prazo, a execução dos pontos do programa pode nos levar a 
+						considerar a reestruturação dos níveis de motivação departamental.</p>
+						
+						<p>O empenho em analisar a contínua expansão de nossa atividade exige a precisão e 
+						a definição dos índices pretendidos.Pensando mais a longo prazo, a execução dos pontos
+						. </p>
+
+						</li>
+					</ul>
+				</div>				
+				<div>
+					<ul>
+						<form action="">
+							<li><h1>Dúvidas? Fale com a gente</h1></li>
+							<li><input id="iptTxt" type="text" placeholder="Nome" required/></li>
+							<li><input id="iptTxt" type="email" placeholder="Email" required/></li>
+							<li><textarea id="iptTxtA" rows="6" cols="50" placeholder="Escreva aqui sua mensagem" required></textarea></li>
+							<span><input id="btnEnviar" type="submit" value="Enviar"/></span>
+							<span><input id="btnLimpar" type="reset" value="Limpar"/></span>
+						</form>
+							<li><br/></li>
+					</ul>
+				</div>
+				
+				<div>
+					<ul>
+						<li><h1>Encontre-nos na internet</h1></li>
+						<li>
+							<p>Pensando mais a longo prazo, a execução dos pontos do programa pode nos levar a 
+							considerar a reestruturação dos níveis de motivação departamental. Não obstante, a 
+							expansão dos mercados mundiais cumpre um papel essencial na formulação.</p>
+						</li>
+						<li>
+							<span class="PretoBranco"><a href="http://www.facebook.com"><img src="img/facebook.png"/></a></span>
+							<span class="PretoBranco"><a href="https://plus.google.com"><img src="img/google+.png"/></a></span>
+							<span class="PretoBranco"><a href="https://twitter.com/"><img src="img/twitter.png"/></a></span>
+							<span class="PretoBranco"><a href="https://br.linkedin.com/"><img src="img/linkedin.png"/></a></span>													
+						</li>
+						<li><br/></li>
+					</ul>
+				</div>
+			</section><!--FIM WRAPPER CONTADOR-->	
+		</div>
+		<h1>
+           	<a href="index.html">
+            <img class="fade" width="200px" alt="Logo TôQuerendo" src="img/logo.png" /></a>
+        </h1>
+    	 &copy; 2013 Rafael Silva - Todos os direitos reservados 
+    </footer>    
+</body>
+</html>
