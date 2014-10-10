@@ -4,11 +4,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Minha Conta</title>
     <meta name="description" content="Minha Conta"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
     <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml"/>
-    <link rel="stylesheet" href="css/flexslider.css"/>
-    <link rel="stylesheet" 	href="css/estilos.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/flexslider.css"/>
+    <link rel="stylesheet" href="css/toquerendo.css"/>
 	<link rel="stylesheet" href="fonts/style.css">
         <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>-->
     <script>
@@ -30,314 +31,131 @@
 </head>
 
 <body>        
-	<section id="barra">
-		<section id="wrapper">
-			<ul>
-				<li><a href="cadastro.html">Cadastre-se</a></li>
-				<li>|</li>
-				<li><a href="login.html">Login</a></li>	
-			</ul>
-		</section><!--FIM WRAPPER BARRA-->
-    </section><!--FIM BARRA-->
-    
-    <header>
-		<section id="wrapper">
-			<a href="index.html"><img class="fade" alt="TôQuerendo" src="img/logo.png" /></a>					
-			<div id="pesquisa">
-				<input type="text" placeholder="O que você deseja?"/><br/><br/>
-			</div><br/>
-		</section><!--FIM WRAPPER HEADER-->
-    </header>
-    
-    <section id="conteudo">
-	
-		<section id="wrapper">
+	<header>
+		<div class="content topBar">
+			<div class="container">
+				<ul class="nav nav-pills pull-right">				
+					<li><a href="#">Cadastro</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- fim topBar container -->
 		
-			<section id="principal">
-			
-				<article id="headerPage">	
-						<!--<img style="float:left; margin-left:5%; padding:5px;" src="img/usuario.jpg"/>-->
-						<h2>Bem-vinda, Moça Bonita. Gerencie sua conta</h2>				
-				</article>						
-				
-				<article id="minha-conta">
-								
-						<ul id="menuConta">
-							<img src="img/usuario.jpg"/><br/>
-							<li><a href="#meusDados" style="color:#5cb85c;" class="scroll"><span><i class="icon icon-user"></i></span> Dados da Conta</a></li>
-							<li><a href="meus-desejos.html"><span><i class="icon icon-heart"></i></span> Meus desejos (107)</a></li>
-							<li><a href="#minhasOfertas" class="scroll"><span><i class="icon icon-briefcase"></i></span> Minhas ofertas (1231)</a></li>
-							<li><a href="notificacoes.html"><span><i class="icon icon-info"></i></span> Notificações</a></li>
-							<li><a href="desejo-servico.html"><span><i class="icon icon-gift"></i></span> Quero produto</a></li>
-							<li><a href="desejo-servico.html"><span><i class="icon icon-food"></i></span> Quero serviço</a></li>
-						</ul>
-					
-				
-						<div id="meusDados"> 
-							<h1><span><i class="icon icon-user"></i></span> Dados da conta</h1>
-							<ul>					
-								<li><strong>Nome: </strong></strong>Moça Bonita</li>                        
-								<li><strong>Apelido: </strong>bonita</li>
-								<li><strong>Email: </strong>bonita@bonita.com.br</li>
-								<li><strong>CEP: </strong>70.000-000</li>
-								<li><strong>Estado: </strong>Algum lugar</li>
-								<li><strong>Cidade: </strong>Far Way</li>
-								<li><strong>Endereço: </strong>Quadra s/ nº, Cj desconjuntado, Cs  muito engraçada</li>
-								<li><strong>Bairro: </strong>Tão distante</li>
-							</ul>
-							
-							<ul>								
-								<li><strong>Telefone: </strong>(61) 6333-0000</li>
-								<li><strong>Data de nascimento: </strong>22/04/1500</li>
-								<li><strong>Sexo: </strong>Feminino</li>
-								<li><strong>Tipo de pessoa: </strong>Física</li>
-								<li><strong>CPF: </strong>111.222.333-44</li>
-								<li><strong>Profissão: </strong>Assistente de Suporte Administrativo</li>
-								<li><strong>Renda: </strong>280 salários</li>
-								<input type="submit" id="btnEnviar" value="Alterar"/>
-							</ul>
-						</div>
-						
-						<!--<div id="meusDesejos">
-							<h1><span><i class="icon icon-heart"></i></span> Meus Desejos</h1>
-							<ul id="listaDes">
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-							</ul><br/>
-						</div><!--================ FIM meusDesejos ==================-->
-						
-						<!--<br/><p style="text-align:right;"><a href="#barra" class="scroll" style="color:gray;"><span style="color:gray;"><i class="icon icon-arrow-up"></i></span> Topo</a></p>
-						
-						<div id="minhasOfertas">
-							
-							<h1><span><i class="icon icon-briefcase" style="color:gray;"></i></span> Minhas Ofertas</h1>
-							
-							<input type="text" placeholder="Pesquisar minhas ofertas"/>
-							
-							<ul id="listaDes">
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-								<li>
-									<p class="titDes">Moto Hornet 2009 para final do mês de outubro</p>
-									<p class="imgDes"><a href="page-item.html"><img src="img/moto.png"/></a></p>
-									<div id="rodapeDes">
-										<a href="page-item.html"><span><span><i class="icon icon-eye"></i></span> Visualizações (34)</span></a>
-										<a href="index.html"><span class="ofertaDes"><span><i class="icon icon-briefcase"></i></span> Ofertas (7)</span></a>
-										<a href="#"><span class="ofertaDes"><span><i class="icon icon-bubbles3"></i></span> Bate-papo</span></a>
-									</div>
-								</li>
-							</ul><br/>
-							
-							<ul id="listaOfer">								
-								<li>
-									<h1>Minha Oferta </h1>
-									<p class="titDes">Moto Honda CG 250 cilindradas branca</p>
-									<a href="page-item.html"><img src="img/moto.png"/></a>
-									<div>
-										<p><span><i class="icon icon-location"></i></span> <strong>Cidade: </strong>Taguatinga - DF</p>
-										<p><span><i class="icon icon-clock"></i></span> <strong>Validade: </strong>27/10/2014</p>
-										<p><span><i class="icon icon-cart3"></i></span> <strong>Quantidade: </strong>1</p>
-										<p><span><i class="icon icon-coin"></i></span><strong>Valor: </strong> 5.000,00</p>
-									</div>
-								</li>
-								
-								<li>
-									<h1>O que desejam</h1>
-									<p class="titDes">Moto Honda CG 250 cilindradas branca</p>
-									<a href="page-item.html"><img src="img/moto.png"/></a>
-									<div>
-										<p><span><i class="icon icon-location"></i></span> <strong>Cidade: </strong>Taguatinga - DF</p>
-										<p><span><i class="icon icon-clock"></i></span> Preciso de uma moto com as características citadas para o próximo final de semana</p>
-									</div>
-								</li>								
-							</ul>
-						
-						</div><!--================ FIM minhasOfertas ==================-->
-						
-						
-						
-						<!--<br/><p style="text-align:right;"><a href="#barra" class="scroll" style="color:gray;"><span style="color:gray;"><i class="icon icon-arrow-up"></i></span> Topo</a></p>
-						
-						
-						<div id="notificacoes">
-							<h1><span><i class="icon icon-info"></i></span> Notificações</h1>
-							<ul>					
-								<li><strong>Nome: </strong></strong>Rafael Moura da Silva</li>                        
-								<li><strong>Apelido: </strong>rafamourasilva</li>
-								<li><strong>Email: </strong>rafamourasilva@gmail.com</li>
-								<li><strong>CEP: </strong>72.302-214</li>
-								<li><strong>Estado: </strong>Distrito Federal</li>
-								<li><strong>Cidade: </strong>Far Way</li>
-								<li><strong>Endereço: </strong>Quadra s/ nº, Cj desconjuntado, Cs  muito engraçada</li>
-								<li><strong>Bairro: </strong>Tão distante</li>
-								<li><strong>Telefone: </strong>(61) 6333-0000</li>
-								<li><strong>Data de nascimento: </strong>22/04/1500</li>
-								<li><strong>Sexo: </strong>Masculino</li>
-								<li><strong>Tipo de pessoa: </strong>Física</li>
-								<li><strong>CPF: </strong>111.222.333-44</li>
-								<li><strong>Profissão: </strong>Assistente de Suporte Administrativo</li>
-								<li><strong>Renda: </strong>280 salários</li>
-							</ul><br/>
-						</div>
-						<br/><p style="text-align:right;"><a href="#barra" class="scroll" style="color:gray;"><span style="color:gray;"><i class="icon icon-arrow-up"></i></span> Topo</a></p>
-					</div>-->
-					
-				</article>					
-			</section>
-		</section><!--------------- FIM WRAPPER-------------->
-		
-		<footer>
-		<div id="rodape">
-			<section id="wrapper">
-				<div>
-					<ul>
-						<li><h1>Sobre o Tô Querendo</h1></li>
-						<li>
-						
-						<p>Pensando mais a longo prazo, a execução dos pontos do programa pode nos levar a 
-						considerar a reestruturação dos níveis de motivação departamental.</p>
-						
-						<p>O empenho em analisar a contínua expansão de nossa atividade exige a precisão e 
-						a definição dos índices pretendidos.Pensando mais a longo prazo, a execução dos pontos
-						. </p>
-
-						</li>
-					</ul>
-				</div>				
-				<div>
-					<ul>
-						<form action="">
-							<li><h1>Dúvidas? Fale com a gente</h1></li>
-							<li><input id="iptTxt" type="text" placeholder="Nome" required/></li>
-							<li><input id="iptTxt" type="email" placeholder="Email" required/></li>
-							<li><textarea id="iptTxtA" rows="6" cols="50" placeholder="Escreva aqui sua mensagem" required></textarea></li>
-							<span><input id="btnEnviar" type="submit" value="Enviar"/></span>
-							<span><input id="btnLimpar" type="reset" value="Limpar"/></span>
-						</form>
-							<li><br/></li>
-					</ul>
+		<div class="container">				
+			<div class="row">
+				<div class="col-md-6">
+					<a href="index.html"><img class="brand" src="img/logo.png"/></a>
+				</div>					
+				<div class="col-md-6">
+					 <div class="pesquisa"><input type="text" name="pesquisa" placeholder="O que você deseja?"/></div>
 				</div>
+			</div>										
+		</div>
+		<!-- fim header container -->			
+	</header>
+	<!-- fim header -->	
+	<div class="content">
+		<div class="container">
+			<ol class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li class="active">Minha conta</li>
+			</ol>
+		</div>
+	</div>
+    
+	<div class="content informacao">
+		<div class="container">
+			<h2>Bem-vinda, Moça Bonita. Gerencie sua conta</h2>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row minha-conta">
+			<div class="col-md-3">
+				<ul class="list-group menu-conta">
+					<img src="img/usuario.jpg"/><br/>
+					<li  class="active"><a href="#dados-conta" class="scroll"><span><i class="icon icon-user"></i></span> Dados da Conta</a></li>
+					<li><a href="meus-desejos.html"><span><i class="icon icon-heart"></i></span> Meus desejos</a></li>
+					<li><a href="minhas-ofertas.html"><span><i class="icon icon-briefcase"></i></span> Minhas ofertas</a></li>
+					<li><a href="notificacoes.html"><span><i class="icon icon-info"></i></span> Notificações</a></li>
+					<li><a href="desejo-servico.html"><span><i class="icon icon-gift"></i></span> Quero produto</a></li>
+					<li><a href="desejo-servico.html"><span><i class="icon icon-food"></i></span> Quero serviço</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-9" id="dados-conta" >
 				
-				<div>
-					<ul>
-						<li><h1>Encontre-nos na internet</h1></li>
-						<li>
-							<p>Pensando mais a longo prazo, a execução dos pontos do programa pode nos levar a 
-							considerar a reestruturação dos níveis de motivação departamental. Não obstante, a 
-							expansão dos mercados mundiais cumpre um papel essencial na formulação.</p>
-						</li>
-						<li>
+				<h2><span><i class="icon icon-user"></i></span> Dados da conta</h2>
+				<ul class="list-group em-linha">					
+					<li><strong>Nome: </strong></strong>Moça Bonita</li>                        
+					<li><strong>Apelido: </strong>bonita</li>
+					<li><strong>Email: </strong>bonita@bonita.com.br</li>
+					<li><strong>CEP: </strong>70.000-000</li>
+					<li><strong>Estado: </strong>Algum lugar</li>
+					<li><strong>Cidade: </strong>Far Way</li>
+					<li><strong>Endereço: </strong>Quadra s/ nº, Cj desconjuntado, Cs  muito engraçada</li>
+					<li><strong>Bairro: </strong>Tão distante</li>
+				</ul>
+				
+				<ul class="list-group em-linha">								
+					<li><strong>Telefone: </strong>(61) 6333-0000</li>
+					<li><strong>Data de nascimento: </strong>22/04/1500</li>
+					<li><strong>Sexo: </strong>Feminino</li>
+					<li><strong>Tipo de pessoa: </strong>Física</li>
+					<li><strong>CPF: </strong>111.222.333-44</li>
+					<li><strong>Profissão: </strong>Assistente de Suporte Administrativo</li>
+					<li><strong>Renda: </strong>280 salários</li>					
+				</ul>
+				<input type="button" class="btn btn-success" value="Alterar"/>
+			</div>
+		
+		</div>
+	</div>
+    
+	<footer>
+		<div class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<h3>Sobre o TôQuerendo</h3>
+						<p>Pensando mais a longo prazo, a execução dos pontos do programa
+						pode nos levar a considerar a reestruturação dos níveis de motivação 
+						departamental.</p>
+						<p>O empenho em analisar a contínua expansão de nossa 
+						atividade exige a precisão e a definição dos índices pretendidos.
+						Pensando mais a longo prazo, a execução dos pontos</p>
+					</div>
+					<div class="col-lg-4">
+						<h3>Dúvidas? Fale com a gente</h3>
+						<input type="text" placeholder="Nome"/>
+						<input type="text" placeholder="email"/>
+						<textarea rows="4" placeholder="Digite sua mensagem"></textarea>
+						<input type="submit" class="btn btn-success" value="Enviar"/>
+						<input type="reset" class="btn btn-clear" value="Limpar"/>
+					</div>
+					<div class="col-lg-4">
+						<h3>Encontre-nos na internet</h3>
+						<p>Pensando mais a longo prazo, a execução dos pontos do programa
+						pode nos levar a considerar a reestruturação dos níveis.</p>
+						<p>
 							<span class="PretoBranco"><a href="http://www.facebook.com"><img src="img/facebook.png"/></a></span>
 							<span class="PretoBranco"><a href="https://plus.google.com"><img src="img/google+.png"/></a></span>
 							<span class="PretoBranco"><a href="https://twitter.com/"><img src="img/twitter.png"/></a></span>
-							<span class="PretoBranco"><a href="https://br.linkedin.com/"><img src="img/linkedin.png"/></a></span>													
-						</li>
-						<li><br/></li>
-					</ul>
-				</div>
-			</section><!--FIM WRAPPER CONTADOR-->	
+							<span class="PretoBranco"><a href="https://br.linkedin.com/"><img src="img/linkedin.png"/></a></span>
+						</p>
+					</div>
+				</div>		
+			</div>		
 		</div>
-		<h1>
-           	<a href="index.html">
-            <img class="fade" width="200px" alt="Logo TôQuerendo" src="img/logo.png" /></a>
-        </h1>
-    	 &copy; 2013 Rafael Silva - Todos os direitos reservados 
-    </footer>
+		<!-- fim jumbotron -->	
+		<div class="content copy-right">
+			<div class="container">
+				<a href="index.html"><img width="200px" alt="Logo TôQuerendo" src="img/logo.png" /></a>
+				<p>&copy; 2014 TôQuerendo - Todos os direitos reservados</p>
+			</div>
+		</div>
+	</footer>
     
 </body>
 </html>

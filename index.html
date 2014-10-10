@@ -23,10 +23,9 @@
 		<header>
 			<div class="content topBar">
 				<div class="container">
-					<ul class="list-group">				
-						<li class="list-group-item">Cadastro</li>
-						<li class="list-group-item">|</li>
-						<li class="list-group-item">Login</li>
+					<ul class="nav nav-pills pull-right">				
+						<li><a href="#">Cadastro</a></li>
+						<li><a href="#">Login</a></li>
 					</ul>
 				</div>
 			</div>
@@ -35,10 +34,10 @@
 			<div class="container">				
 				<div class="row">
 					<div class="col-md-6">
-						<img src="img/logo.png"/>
+						<a href="index.html"><img class="brand" src="img/logo.png"/></a>
 					</div>					
 					<div class="col-md-6">
-				         <input type="text" name="pesquisa" placeholder="O que você deseja?"/>
+				         <div class="pesquisa"><input type="text" name="pesquisa" placeholder="O que você deseja?"/></div>
 					</div>
 				</div>										
 			</div>
@@ -47,39 +46,44 @@
 		<!-- fim header -->		
 		<div class="jumbotron">
 			<div class="container">
-				<div class="row">
+				<h2>Uma nova forma de comprar pela internet</h2>
+				<div class="row">					
+					<div class="col-lg-4">
+						<div class="row">							
+							<div class="col-md-2 numero">
+								<img src="img/bg1.png" />
+							</div>
+							<div class="col-md-7">
+								<h4>Publique seu desejo</h4>
+								<p class="passos">Os desejos são classificados por Produto ou Serviço.
+								Temos diversas categorias que auxiliam no cadastro do desejo</p>
+							</div>
+							<div class="col-md-2"><div class="seta"><img src="img/seta.png"/></div></div>
+						</div>
+					</div>
+					
 					<div class="col-lg-4">
 						<div class="row">
-							<div class="col-md-2 numero-1">
-								<img width="100%;" src="img/bg1.png" />
+							<div class="col-md-4 numero">
+								<img src="img/bg2.png" />
 							</div>
-							<div class="col-md-8">
-								<h2>titulo da div</h2>
-								<p>Texto</p>
+							<div class="col-md-6">
+								<h4>Receba oferta de interessados</h4>
+								<p class="passos">Você receberá ofertas de vendedores e poderá avaliar
+								as ofertas dos seus desejo</p>
 							</div>
-							<div class="col-md-2"><span><img class="seta" src="img/seta.png"/></span></div>
+							<div class="col-md-2"><div class="seta"><img src="img/seta.png"/></div></div>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="row">
-							<div class="col-md-2 numero-1">
-								<img width="100%;" src="img/bg2.png" />
+							<div class="col-md-4 numero">
+								<img src="img/bg3.png" />
 							</div>
 							<div class="col-md-8">
-								<h2>titulo da div</h2>
-								<p>Texto</p>
-							</div>
-							<div class="col-md-2"><span><img class="seta" src="img/seta.png"/></span></div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="row">
-							<div class="col-md-2 numero-1">
-								<img width="100%;" src="img/bg3.png" />
-							</div>
-							<div class="col-md-10">
-								<h2>titulo da div</h2>
-								<p>Texto</p>
+								<h4>Negocie e realize seu desejo</h4>
+								<p class="passos">Negocie diretamente com o vendedor que fez a oferta 
+								e concretize sua compra</p>
 							</div>
 							
 						</div>
@@ -90,7 +94,7 @@
 		<!-- fim jumbotron -->	
 		
 		<div class="content inicio top-margin-10">
-			<div class="container">
+			<div class="container">				
 				<div class="col-md-6 text-center">
 					<input type="button" class="btn btn-success" value="Acessar conta" />
 					<input type="button" class="btn btn-success" value="Criar conta" />
@@ -106,6 +110,11 @@
 		
 		<div class="container">
 			<h2 class="produto">Produtos</h2>
+			<ul class="nav nav-pills produto">
+			  <li class="active"><a href="#"><span><i class="icon icon-office"></i></span> Imóveis</a></li>
+			  <li><a href="#"><span><i class="icon icon-truck"></i></span> Veículos</a></li>
+			  <li><a href="#"><span><i class="icon icon-cart"></i></span> + Produtos</a></li>
+			</ul>
 			<div class="row">
 				<div class="col-md-3">
 					<div class="item item-prod">
@@ -114,7 +123,7 @@
 						<div class="img-item"><a href="#"><img src="img/moto.png"/></a></div>
 						<div class="rodape-item rodape-prod">
 							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-pro" href="#">Enviar Oferta</a>
+							<a class="btn-pro" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
 						</div>
 					</div>
 				</div>
@@ -155,6 +164,11 @@
 			<!-- fim servicos -->
 			
 			<h2 class="servicos">Serviços</h2>
+			<ul class="nav nav-pills servicos">
+			  <li class="active"><a href="#"><span><i class="icon icon-office"></i></span> Imóveis</a></li>
+			  <li><a href="#"><span><i class="icon icon-truck"></i></span> Veículos</a></li>
+			  <li><a href="#"><span><i class="icon icon-cart"></i></span> + Serviços</a></li>
+			</ul>
 			<div class="row">
 				<div class="col-md-3">
 					<div class="item item-serv">
@@ -284,9 +298,10 @@
 					<div class="row">
 						<div class="col-lg-4">
 							<h3>Sobre o TôQuerendo</h3>
-							<p>ensando mais a longo prazo, a execução dos pontos do programa
+							<p>Pensando mais a longo prazo, a execução dos pontos do programa
 							pode nos levar a considerar a reestruturação dos níveis de motivação 
-							departamental.O empenho em analisar a contínua expansão de nossa 
+							departamental.</p>
+							<p>O empenho em analisar a contínua expansão de nossa 
 							atividade exige a precisão e a definição dos índices pretendidos.
 							Pensando mais a longo prazo, a execução dos pontos</p>
 						</div>
@@ -300,13 +315,25 @@
 						</div>
 						<div class="col-lg-4">
 							<h3>Encontre-nos na internet</h3>
-							<p>ensando mais a longo prazo, a execução dos pontos do programa
+							<p>Pensando mais a longo prazo, a execução dos pontos do programa
 							pode nos levar a considerar a reestruturação dos níveis.</p>
+							<p>
+								<span class="PretoBranco"><a href="http://www.facebook.com"><img src="img/facebook.png"/></a></span>
+								<span class="PretoBranco"><a href="https://plus.google.com"><img src="img/google+.png"/></a></span>
+								<span class="PretoBranco"><a href="https://twitter.com/"><img src="img/twitter.png"/></a></span>
+								<span class="PretoBranco"><a href="https://br.linkedin.com/"><img src="img/linkedin.png"/></a></span>
+							</p>
 						</div>
 					</div>		
 				</div>		
 			</div>
-			<!-- fim jumbotron -->			
+			<!-- fim jumbotron -->	
+			<div class="content copy-right">
+				<div class="container">
+					<a href="index.html"><img width="200px" alt="Logo TôQuerendo" src="img/logo.png" /></a>
+					<p>&copy; 2014 TôQuerendo - Todos os direitos reservados</p>
+				</div>
+			</div>
 		</footer>
 		
 	</body>

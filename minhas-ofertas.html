@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Minhas Ofertas</title>
+    <meta name="description" content="Minhas Ofertas"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/toquerendo.css"/>
+	<link rel="stylesheet" href="fonts/style.css">
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>-->
+    <script>
+    	!window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>");
+    </script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) { 
+			$(".scroll").click(function(event){        
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+		   });
+		});
+	</script>
+	<script>	
+		$('#myTab a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')		  
+		})
+		
+	</script> 
+    
+	<!-- [if lt IE 9]>
+    	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>        
+	<header>
+		<div class="content topBar">
+			<div class="container">
+				<ul class="nav nav-pills pull-right">				
+					<li><a href="#">Cadastro</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- fim topBar container -->
+		
+		<div class="container">				
+			<div class="row">
+				<div class="col-md-6">
+					<a href="index.html"><img class="brand" src="img/logo.png"/></a>
+				</div>					
+				<div class="col-md-6">
+					 <div class="pesquisa"><input type="text" name="pesquisa" placeholder="O que você deseja?"/></div>
+				</div>
+			</div>										
+		</div>
+		<!-- fim header container -->	
+		
+	</header>
+	<!-- fim header -->	
+	
+	<div class="content">
+		<div class="container">
+			<ol class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li class="active">Minhas Ofertas</li>
+			</ol>
+		</div>
+	</div>
+    
+	<div class="content informacao">
+		<div class="container">
+			<h2>Bem-vinda, Moça Bonita. Gerencie sua conta</h2>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row minha-conta">
+			<div class="col-md-3">
+				<ul class="list-group menu-conta">
+					<img src="img/usuario.jpg"/><br/>
+					<li><a href="#meusDados" class="scroll"><span><i class="icon icon-user"></i></span> Dados da Conta</a></li>
+					<li><a href="meus-desejos.html"><span><i class="icon icon-heart"></i></span> Meus desejos</a></li>
+					<li  class="active"><a href="#minhasOfertas" class="scroll"><span><i class="icon icon-briefcase"></i></span> Minhas ofertas</a></li>
+					<li><a href="notificacoes.html"><span><i class="icon icon-info"></i></span> Notificações</a></li>
+					<li><a href="desejo-servico.html"><span><i class="icon icon-gift"></i></span> Quero produto</a></li>
+					<li><a href="desejo-servico.html"><span><i class="icon icon-food"></i></span> Quero serviço</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-9" id="minhasOfertas">				
+				<h2><span><i class="icon icon-briefcase"></i></span> Minhas Ofertas</h2>
+				<div class="col-lg-12">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+					  <li class="active"><a href="#oferta" role="tab" data-toggle="tab">Oferta</a></li>
+					  <li><a href="#desejo" role="tab" data-toggle="tab">Desejo</a></li>
+					  <li><a href="#concorrentes" role="tab" data-toggle="tab">Concorrentes</a></li>
+					  <li><a href="#chat" role="tab" data-toggle="tab">Chat</a></li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content minhas-ofertas">
+					  <div class="tab-pane fade in active" id="oferta">
+							<div class="row">
+								<div class="col-md-6">
+									<h3>Ofereço uma moto honda 250 cilindradas</h3>
+									<ul class="list">
+										<li><span><i class="icon icon-clock"> </i></span> <strong>Validade da Oferta: </strong>27/11/2014</li>
+										<li><span><i class="icon icon-checkmark"> </i></span> <strong>Cidade: </strong>Valparaíso de Goiás - GO</li>
+										<li><span><i class="icon icon-checkmark"> </i></span> <strong>Quantidade: </strong>22</li>
+										<li><span><i class="icon icon-checkmark"> </i></span> <strong>Valor: </strong>R$ 20.000,00</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<img src="img/moto3.jpg"/>
+								</div>
+							</div>
+					  </div>
+					  <div class="tab-pane fade" id="desejo">
+							<div class="row">
+								<div class="col-md-6">
+									<h3>Moto Yamaha 600 cilindradas </h3>
+									<ul class="list">															
+										<li><span><i class="icon icon-checkmark"> </i></span> <strong>Cidade: </strong>Lago Norte - DF</li>
+										<li><span><i class="icon icon-checkmark"> </i></span> <strong>Quantidade: </strong>1</li>
+										<li><span><i class="icon icon-checkmark"> </i></span> <strong>Valor: </strong>R$ 30.000,00</li>							
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<img src="img/moto4.png"/>
+								</div>
+							</div>
+					  </div>
+					  <div class="tab-pane fade" id="concorrentes">
+							<div class="row">
+								<div class="col-lg-6">
+									<h3>Ofereço uma moto CG 125 cilindradas </h3>
+									<ul class="list">										
+										<li><span><i class="icon icon-clock"> </i></span> <strong>Validade da Oferta: </strong>13/10/2014</li>
+										<li><span><i class="icon icon-checkmark"> </i></span> <strong>Cidade: </strong>Taguatinga - DF</li>
+										<li><span><i class="icon icon-checkmark"> </i></span> <strong>Quantidade: </strong>22</li>
+										<li><span><i class="icon icon-checkmark"> </i></span> <strong>Valor: </strong>R$ 18.500,00</li>						
+									</ul>
+								</div>
+								<div class="col-lg-6">
+									<img src="img/slide-0.jpg"/>
+								</div>
+							</div>
+					  </div>
+					  <div class="tab-pane fade" id="chat">
+							<h3>Histórico de conversas </h3>
+							<ul class="list">
+								<li class="especificacao"><span><i class="icon icon-bubbles"> </i></span>Felipe Moura</li>
+								<li class="especificacao"><span><i class="icon icon-bubbles"> </i></span>Gabriel Oliveira</li>
+								<li class="especificacao"><span><i class="icon icon-bubbles"> </i></span>Xaropinho Moura</li>
+								<li class="especificacao"><span><i class="icon icon-bubbles"> </i></span>Lorena M.C.M. da Silva</li>
+							</ul>
+					  </div>
+					
+					</div>
+				</div>
+					
+			</div>
+		
+		</div>
+	</div>
+    
+	<footer>
+		<div class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<h3>Sobre o TôQuerendo</h3>
+						<p>Pensando mais a longo prazo, a execução dos pontos do programa
+						pode nos levar a considerar a reestruturação dos níveis de motivação 
+						departamental.</p>
+						<p>O empenho em analisar a contínua expansão de nossa 
+						atividade exige a precisão e a definição dos índices pretendidos.
+						Pensando mais a longo prazo, a execução dos pontos</p>
+					</div>
+					<div class="col-lg-4">
+						<h3>Dúvidas? Fale com a gente</h3>
+						<input type="text" placeholder="Nome"/>
+						<input type="text" placeholder="email"/>
+						<textarea rows="4" placeholder="Digite sua mensagem"></textarea>
+						<input type="submit" class="btn btn-success" value="Enviar"/>
+						<input type="reset" class="btn btn-clear" value="Limpar"/>
+					</div>
+					<div class="col-lg-4">
+						<h3>Encontre-nos na internet</h3>
+						<p>Pensando mais a longo prazo, a execução dos pontos do programa
+						pode nos levar a considerar a reestruturação dos níveis.</p>
+						<p>
+							<span class="PretoBranco"><a href="http://www.facebook.com"><img src="img/facebook.png"/></a></span>
+							<span class="PretoBranco"><a href="https://plus.google.com"><img src="img/google+.png"/></a></span>
+							<span class="PretoBranco"><a href="https://twitter.com/"><img src="img/twitter.png"/></a></span>
+							<span class="PretoBranco"><a href="https://br.linkedin.com/"><img src="img/linkedin.png"/></a></span>
+						</p>
+					</div>
+				</div>		
+			</div>		
+		</div>
+		<!-- fim jumbotron -->	
+		<div class="content copy-right">
+			<div class="container">
+				<a href="index.html"><img width="200px" alt="Logo TôQuerendo" src="img/logo.png" /></a>
+				<p>&copy; 2014 TôQuerendo - Todos os direitos reservados</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

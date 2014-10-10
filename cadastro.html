@@ -1,25 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Cadastro</title>
-    <meta name="description" content="Cadastro"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml"/>
-    <link rel="stylesheet" 	href="css/estilos.css"/>
-	<link rel="stylesheet" href="fonts/style.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Cadastro</title>
+		<meta name="description" content="Cadastro"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml"/>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/toquerendo.css"/>
+        <link rel="stylesheet" href="fonts/style.css">
         <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>-->
     <script>
     	!window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>");
-    </script>
-
-	<script>
-    	$(window).load(function(){
-			$(".flexslider").flexslider();	
-			
-		});	
-		
     </script>
 	
 	<script type="text/javascript">
@@ -49,233 +42,186 @@
 </head>
 
 <body>        
-	<section id="barra">
-		<section id="wrapper">
-			<ul>
-				<li><a href="cadastro.html">Cadastre-se</a></li>
-				<li>|</li>
-				<li><a href="login.html">Login</a></li>	
-			</ul>
-		</section><!--FIM WRAPPER BARRA-->
-    </section><!--FIM BARRA-->
-    
-    <header>
-		<section id="wrapper">
-			<a href="index.html"><img class="fade" alt="TôQuerendo" src="img/logo.png" /></a>					
-			<div id="pesquisa">
-				<input type="text" placeholder="O que você deseja?"/><br/><br/>
-			</div><br/>
-		</section><!--FIM WRAPPER HEADER-->
-    </header>
-    
-    <section id="conteudo">		
-			<section id="principal">			
-				<article id="headerPage">	
-						<h2>Parabéns! Você já deu o primeiro passo. Agora complete seus dados</h2>				
-				</article>					
+	<header>
+			<div class="content topBar">
+				<div class="container">
+					<ul class="nav nav-pills pull-right">				
+						<li><a href="#">Cadastro</a></li>
+						<li><a href="#">Login</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- fim topBar container -->
 			
-			<section id="wrapper">				
-				<article id="cadastro">					
-						<div id="dadosConta">
-							<div id="headerCadastro">
-								<h1>Dados da Conta</h1><br/>							
-							</div>
-							
-							<form action="#">		
-							
-							<ul>
-								<li>
-									<input id="iptTxt" type="text" placeholder="Nome" required/>
-								</li>
-								<li>
-									<input id="iptTxt" type="email" placeholder="Email" required/>
-								</li> 
-								<li>
-									<input id="iptTxt" type="text" placeholder="Confirme seu email" required/>
-								</li>                        
-								<li>
-									<input id="iptTxt" type="text" placeholder="Digite seu nome de usuário" required/>
-								</li>   
-								<li>
-									<input id="iptTxt" type="password" placeholder="Digite sua senha" required/>
-								</li>
-								<li>
-									<input id="btnSelFoto" type="submit"  value="Selecione uma foto"/>
-								</li>
-								<li>
-									<a href="#dadosPessoais" class="scroll"><input type="submit" id="proximo" value="Próximo"/></a>
-								</li>
-							</ul>
-						</div>
-						<!--FIM DADOSCONTA-->
-							
-						<div id="dadosPessoais">
-							<div id="headerPessoais">
-								<h1>Dados Pessoais</h1><br/>				
-							</div>
-							
-							<ul>					
-								<li>                        	
-									<select id="iptSelect" required>
-										<option label="Sexo" value="">Sexo</option>
-										<option label="Masculino" value="1">Masculino</option>
-										<option label="Feminino" value="2">Feminino</option>
-										<option label="Outro" value="3">Outro</option>							
-									</select>
-								</li>                        
-								<li>
-									<input type="text" id="iptTxt" placeholder="Digite a data de nascimento" required/>
-								</li>   
-								<li>
-									<select id="iptSelect" required>
-										<option label="Tipo de pessoa..." value="">Tipo de Pessoa...</option>
-										<option label="Física" value="1">Física</option>
-										<option label="Jurídica" value="2">Jurídica</option>
-									</select>
-								</li>
-								<li>
-									<input type="text" id="iptTxt" placeholder="Digite seu CPF" required/>
-								</li>
-								<li>
-									<input id="ddd" type="text" placeholder="DDD" required/><input id="telefone" type="text" placeholder="Telefone Celular" required/>
-								</li>
-								<li>
-									<input id="ddd" type="text" id="iptTxt" placeholder="DDD" required/><input id="telefone" type="text" placeholder="Telefone Fixo" required/>
-								</li>
-								<li>
-									<a href="#dadosEnd" class="scroll"><input type="submit" id="proximo2" value="Próximo"/></a>
-								</li>
-							</ul>
-						</div>
-						<!--FIM DADOSPESSOAIS-->
-							
-						<div id="dadosEnd">
-							<div id="headerDadosEnd">
-								<h1>Dados de Endereço</h1><br/>				
-							</div>
-							
-							<ul>					
-								<li>
-									<input type="text" id="iptTxt" placeholder="Digite seu CEP" required/>
-								</li>   
-								<li>
-									<select id="iptSelect" required>
-										<option label="Selecione seu Estado" value="">Selecione seu Estado</option>
-										<option label="AC" value="1">AC</option>
-										<option label="AL" value="2">AL</option>
-										<option label="AP" value="3">AP</option>
-										<option label="AM" value="4">AM</option>
-										<option label="BA" value="5">BA</option>
-										<option label="CE" value="6">CE</option>
-										<option label="DF" value="7">DF</option>
-										<option label="ES" value="8">ES</option>
-										<option label="GO" value="9">GO</option>
-										<option label="MA" value="10">MA</option>
-										<option label="MT" value="11">MT</option>
-										<option label="MS" value="12">MS</option>
-										<option label="MG" value="13">MG</option>
-										<option label="PA" value="14">PA</option>
-										<option label="PB" value="15">PB</option>
-										<option label="PR" value="16">PR</option>
-										<option label="PE" value="17">PE</option>
-										<option label="PI" value="18">PI</option>
-										<option label="RJ" value="19">RJ</option>
-										<option label="RN" value="20">RN</option>
-										<option label="RS" value="21">RS</option>
-										<option label="RO" value="22">RO</option>
-										<option label="RR" value="23">RR</option>
-										<option label="SC" value="24">SC</option>
-										<option label="SP" value="25">SP</option>
-										<option label="SE" value="26">SE</option>
-										<option label="TO" value="27">TO</option>
-									</select>
-								</li>
-								<li>
-									<select id="iptSelect" required>
-										<option label="Selecione sua Cidade" value="">Selecione sua Cidade</option>
-									</select>
-								</li>
-								<li>
-									<input type="text" id="iptTxt" placeholder="Endereço" required/>
-								</li>   
-								<li>
-									<input type="text" id="iptTxt" placeholder="Bairro" required/>
-								</li> 
-								<li>
-									<input type="text" id="iptTxt" placeholder="Número" required/>
-								</li> 
-								<li>
-									<input type="submit" value="Cadastrar"/>
-								</li>
-							</ul>
-						</div>
-						<!-- FIM DADOSEND  -->
-					</form>
-				</article>
-				<!--------------- FIM CADASTRO ------------>
-				
-			</section>
-		</section>
-		<!-------------- FIM WRAPPER ----------------------->
-    </section>
-	<!------------------ FIM CONTEUDO ---------------------->
-    
-    <footer>
-		<div id="rodape">
-			<section id="wrapper">
-				<div>
-					<ul>
-						<li><h1>Sobre o Tô Querendo</h1></li>
-						<li>
-						
-						<p>Pensando mais a longo prazo, a execução dos pontos do programa pode nos levar a 
-						considerar a reestruturação dos níveis de motivação departamental.</p>
-						
-						<p>O empenho em analisar a contínua expansão de nossa atividade exige a precisão e 
-						a definição dos índices pretendidos.Pensando mais a longo prazo, a execução dos pontos
-						. </p>
-
-						</li>
-					</ul>
-				</div>				
-				<div>
-					<ul>
-						<form action="">
-							<li><h1>Dúvidas? Fale com a gente</h1></li>
-							<li><input id="iptTxt" type="text" placeholder="Nome" required/></li>
-							<li><input id="iptTxt" type="email" placeholder="Email" required/></li>
-							<li><textarea id="iptTxtA" rows="6" cols="50" placeholder="Escreva aqui sua mensagem" required></textarea></li>
-							<span><input id="btnEnviar" type="submit" value="Enviar"/></span>
-							<span><input id="btnLimpar" type="reset" value="Limpar"/></span>
-						</form>
-							<li><br/></li>
-					</ul>
-				</div>
-				
-				<div>
-					<ul>
-						<li><h1>Encontre-nos na internet</h1></li>
-						<li>
-							<p>Pensando mais a longo prazo, a execução dos pontos do programa pode nos levar a 
-							considerar a reestruturação dos níveis de motivação departamental. Não obstante, a 
-							expansão dos mercados mundiais cumpre um papel essencial na formulação.</p>
-						</li>
-						<li>
-							<span class="PretoBranco"><a href="http://www.facebook.com"><img src="img/facebook.png"/></a></span>
-							<span class="PretoBranco"><a href="https://plus.google.com"><img src="img/google+.png"/></a></span>
-							<span class="PretoBranco"><a href="https://twitter.com/"><img src="img/twitter.png"/></a></span>
-							<span class="PretoBranco"><a href="https://br.linkedin.com/"><img src="img/linkedin.png"/></a></span>													
-						</li>
-						<li><br/></li>
-					</ul>
-				</div>
-			</section><!--FIM WRAPPER CONTADOR-->	
+			<div class="container">				
+				<div class="row">
+					<div class="col-md-6">
+						<a href="index.html"><img class="brand" src="img/logo.png"/></a>
+					</div>					
+					<div class="col-md-6">
+				         <div class="pesquisa"><input type="text" name="pesquisa" placeholder="O que você deseja?"/></div>
+					</div>
+				</div>										
+			</div>
+			<!-- fim header container -->			
+		</header>
+		<!-- fim header -->	
+		<div class="content">
+			<div class="container">
+				<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li class="active">Cadastro</li>
+				</ol>
+			</div>
 		</div>
-		<h1>
-           	<a href="index.html">
-            <img class="fade" width="200px" alt="Logo TôQuerendo" src="img/logo.png" /></a>
-        </h1>
-    	 &copy; 2013 Rafael Silva - Todos os direitos reservados 
-    </footer>    
-</body>
+    
+		<div class="content informacao">
+			<div class="container">
+				<h2>Já tem cadastro? Faça seu login e aproveite. Não tem? Cadastre-se agora. É fácil e rápido!</h2>
+			</div>
+		</div>
+		
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="panel panel-default cadastro">
+				  <div class="panel-heading cadastro"><h3>Dados da Conta</h3></div>
+				  <div class="panel-body">
+					<div class="inputs">
+						<form>
+							<input type="text" placeholder="Nome" required/>
+							<input type="email" placeholder="Email" required/>
+							<input type="email" placeholder="Confirme seu email" required/>
+							<input type="text" placeholder="Digite seu nome de usuário" required/>
+							<input type="password" placeholder="Escolha uma Senha" required/>						
+							<input type="button" class="btn btn-default pull-block" value="Selecione uma foto"/>
+							<input type="submit" class="btn btn-success scroll" id="proximo" value="Próximo"/>					
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-default cadastro" id="dadosPessoais">
+				  <div class="panel-heading cadastro"><h3>Dados Pessoais</h3></div>
+				  <div class="panel-body">
+					<div class="inputs">
+					
+							<select required>
+								<option label="Sexo" value="">Sexo</option>
+								<option label="Masculino" value="1">Masculino</option>
+								<option label="Feminino" value="2">Feminino</option>
+								<option label="Outro" value="3">Outro</option>							
+							</select>
+							<input type="text" placeholder="Digite a data de nascimento"/>
+							<select required>
+								<option label="Você é..." value="">Você é...</option>
+								<option label="Pessoa Física" value="fisica">Pessoa Física</option>
+								<option label="Pessoa Jurídica" value="juridica">Pessoa Jurídica</option>
+							</select>
+							<input type="text" placeholder="Digite seu CPF"/>
+							<input type="text" placeholder="Informe seu telefone fixo"/>						
+							<input type="text" placeholder="Informe seu Celular"/>
+							<input type="button" class="btn btn-success" id="proximo2" value="Próximo"/>
+						
+					</div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="panel panel-default cadastro" id="dadosEnd">
+				  <div class="panel-heading cadastro"><h3>Dados de Endereço</h3></div>
+					  <div class="panel-body">
+						<div class="inputs">						
+								<input type="text" id="iptTxt" placeholder="Digite seu CEP" required/>
+								<select required>
+									<option label="Selecione seu Estado" value="">Selecione seu Estado</option>
+									<option label="AC" value="1">AC</option>
+									<option label="AL" value="2">AL</option>
+									<option label="AP" value="3">AP</option>
+									<option label="AM" value="4">AM</option>
+									<option label="BA" value="5">BA</option>
+									<option label="CE" value="6">CE</option>
+									<option label="DF" value="7">DF</option>
+									<option label="ES" value="8">ES</option>
+									<option label="GO" value="9">GO</option>
+									<option label="MA" value="10">MA</option>
+									<option label="MT" value="11">MT</option>
+									<option label="MS" value="12">MS</option>
+									<option label="MG" value="13">MG</option>
+									<option label="PA" value="14">PA</option>
+									<option label="PB" value="15">PB</option>
+									<option label="PR" value="16">PR</option>
+									<option label="PE" value="17">PE</option>
+									<option label="PI" value="18">PI</option>
+									<option label="RJ" value="19">RJ</option>
+									<option label="RN" value="20">RN</option>
+									<option label="RS" value="21">RS</option>
+									<option label="RO" value="22">RO</option>
+									<option label="RR" value="23">RR</option>
+									<option label="SC" value="24">SC</option>
+									<option label="SP" value="25">SP</option>
+									<option label="SE" value="26">SE</option>
+									<option label="TO" value="27">TO</option>
+								</select>
+								<select required>
+									<option label="Selecione sua Cidade" value="">Selecione sua Cidade</option>
+								</select>
+								<input type="text" id="iptTxt" placeholder="Endereço" required/>
+								<input type="text" id="iptTxt" placeholder="Bairro" required/>
+								<input type="text" id="iptTxt" placeholder="Número" required/>
+								<input type="submit" class="btn btn-success" value="Cadastrar"/>						
+							</form>
+						</div>
+					  </div>
+				</div>
+				<!--fim dadosEnd-->
+			</div>
+		 </div>
+		</div>
+	
+		<footer>
+			<div class="jumbotron">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4">
+							<h3>Sobre o TôQuerendo</h3>
+							<p>Pensando mais a longo prazo, a execução dos pontos do programa
+							pode nos levar a considerar a reestruturação dos níveis de motivação 
+							departamental.</p>
+							<p>O empenho em analisar a contínua expansão de nossa 
+							atividade exige a precisão e a definição dos índices pretendidos.
+							Pensando mais a longo prazo, a execução dos pontos</p>
+						</div>
+						<div class="col-lg-4">
+							<h3>Dúvidas? Fale com a gente</h3>
+							<input type="text" placeholder="Nome"/>
+							<input type="text" placeholder="email"/>
+							<textarea rows="4" placeholder="Digite sua mensagem"></textarea>
+							<input type="submit" class="btn btn-success" value="Enviar"/>
+							<input type="reset" class="btn btn-clear" value="Limpar"/>
+						</div>
+						<div class="col-lg-4">
+							<h3>Encontre-nos na internet</h3>
+							<p>Pensando mais a longo prazo, a execução dos pontos do programa
+							pode nos levar a considerar a reestruturação dos níveis.</p>
+							<p>
+								<span class="PretoBranco"><a href="http://www.facebook.com"><img src="img/facebook.png"/></a></span>
+								<span class="PretoBranco"><a href="https://plus.google.com"><img src="img/google+.png"/></a></span>
+								<span class="PretoBranco"><a href="https://twitter.com/"><img src="img/twitter.png"/></a></span>
+								<span class="PretoBranco"><a href="https://br.linkedin.com/"><img src="img/linkedin.png"/></a></span>
+							</p>
+						</div>
+					</div>		
+				</div>		
+			</div>
+			<!-- fim jumbotron -->	
+			<div class="content copy-right">
+				<div class="container">
+					<a href="index.html"><img width="200px" alt="Logo TôQuerendo" src="img/logo.png" /></a>
+					<p>&copy; 2014 TôQuerendo - Todos os direitos reservados</p>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
