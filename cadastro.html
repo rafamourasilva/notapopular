@@ -46,8 +46,8 @@
 			<div class="content topBar">
 				<div class="container">
 					<ul class="nav nav-pills pull-right">				
-						<li><a href="#">Cadastro</a></li>
-						<li><a href="#">Login</a></li>
+						<li><a href="cadastro.html">Cadastro</a></li>
+						<li><a href="minha-conta.html">Login</a></li>
 					</ul>
 				</div>
 			</div>
@@ -69,7 +69,7 @@
 		<div class="content">
 			<div class="container">
 				<ol class="breadcrumb">
-				  <li><a href="#">Home</a></li>
+				  <li><a href="index.html">Home</a></li>
 				  <li class="active">Cadastro</li>
 				</ol>
 			</div>
@@ -82,45 +82,44 @@
 		</div>
 		
 	<div class="container">
-		<div class="row">
+		<div class="row cadastro">
 			<div class="col-md-4">
-				<div class="panel panel-default cadastro">
-				  <div class="panel-heading cadastro"><h3>Dados da Conta</h3></div>
+				<div class="panel panel-default paineis">
+				  <div class="panel-heading paineis"><h3>Dados da Conta</h3></div>
 				  <div class="panel-body">
 					<div class="inputs">
 						<form>
-							<input type="text" placeholder="Nome" required/>
-							<input type="email" placeholder="Email" required/>
-							<input type="email" placeholder="Confirme seu email" required/>
-							<input type="text" placeholder="Digite seu nome de usuário" required/>
-							<input type="password" placeholder="Escolha uma Senha" required/>						
-							<input type="button" class="btn btn-default pull-block" value="Selecione uma foto"/>
+							<input type="text" class="iptTxt" placeholder="Nome" required/>
+							<input type="email" class="iptTxt" placeholder="Email" required/>
+							<input type="email" class="iptTxt" placeholder="Confirme seu email" required/>
+							<input type="text" class="iptTxt" placeholder="Digite seu nome de usuário" required/>
+							<input type="password" class="iptTxt" placeholder="Escolha uma Senha" required/>						
+							<input type="button" class="btn btn-clear pull-block" value="Selecione uma foto"/>
 							<input type="submit" class="btn btn-success scroll" id="proximo" value="Próximo"/>					
 					</div>
 				  </div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="panel panel-default cadastro" id="dadosPessoais">
-				  <div class="panel-heading cadastro"><h3>Dados Pessoais</h3></div>
+				<div class="panel panel-default paineis" id="dadosPessoais">
+				  <div class="panel-heading paineis"><h3>Dados Pessoais</h3></div>
 				  <div class="panel-body">
-					<div class="inputs">
-					
-							<select required>
+					<div class="inputs">					
+							<select class="iptSel" required>
 								<option label="Sexo" value="">Sexo</option>
 								<option label="Masculino" value="1">Masculino</option>
 								<option label="Feminino" value="2">Feminino</option>
 								<option label="Outro" value="3">Outro</option>							
 							</select>
-							<input type="text" placeholder="Digite a data de nascimento"/>
-							<select required>
+							<input type="text" class="iptTxt" placeholder="Digite a data de nascimento"/>
+							<select class="iptSel" required>
 								<option label="Você é..." value="">Você é...</option>
 								<option label="Pessoa Física" value="fisica">Pessoa Física</option>
 								<option label="Pessoa Jurídica" value="juridica">Pessoa Jurídica</option>
 							</select>
-							<input type="text" placeholder="Digite seu CPF"/>
-							<input type="text" placeholder="Informe seu telefone fixo"/>						
-							<input type="text" placeholder="Informe seu Celular"/>
+							<input type="text" class="iptTxt" placeholder="Digite seu CPF"/>
+							<input type="text" class="iptTxt" placeholder="Informe seu telefone fixo"/>						
+							<input type="text" class="iptTxt" placeholder="Informe seu Celular"/>
 							<input type="button" class="btn btn-success" id="proximo2" value="Próximo"/>
 						
 					</div>
@@ -129,12 +128,12 @@
 			</div>
 			
 			<div class="col-md-4">
-				<div class="panel panel-default cadastro" id="dadosEnd">
-				  <div class="panel-heading cadastro"><h3>Dados de Endereço</h3></div>
+				<div class="panel panel-default paineis" id="dadosEnd">
+				  <div class="panel-heading paineis"><h3>Dados de Endereço</h3></div>
 					  <div class="panel-body">
 						<div class="inputs">						
-								<input type="text" id="iptTxt" placeholder="Digite seu CEP" required/>
-								<select required>
+								<input type="text" class="iptTxt" placeholder="Digite seu CEP" required/>
+								<select class="iptSel" required>
 									<option label="Selecione seu Estado" value="">Selecione seu Estado</option>
 									<option label="AC" value="1">AC</option>
 									<option label="AL" value="2">AL</option>
@@ -164,12 +163,12 @@
 									<option label="SE" value="26">SE</option>
 									<option label="TO" value="27">TO</option>
 								</select>
-								<select required>
+								<select class="iptSel" required>
 									<option label="Selecione sua Cidade" value="">Selecione sua Cidade</option>
 								</select>
-								<input type="text" id="iptTxt" placeholder="Endereço" required/>
-								<input type="text" id="iptTxt" placeholder="Bairro" required/>
-								<input type="text" id="iptTxt" placeholder="Número" required/>
+								<input type="text" class="iptTxt" placeholder="Endereço" required/>
+								<input type="text" class="iptTxt" placeholder="Bairro" required/>
+								<input type="text" class="iptTxt" placeholder="Número" required/>
 								<input type="submit" class="btn btn-success" value="Cadastrar"/>						
 							</form>
 						</div>
@@ -195,9 +194,9 @@
 						</div>
 						<div class="col-lg-4">
 							<h3>Dúvidas? Fale com a gente</h3>
-							<input type="text" placeholder="Nome"/>
-							<input type="text" placeholder="email"/>
-							<textarea rows="4" placeholder="Digite sua mensagem"></textarea>
+							<input type="text" class="iptTxt" placeholder="Nome"/>
+							<input type="text" class="iptTxt" placeholder="Email"/>
+							<textarea rows="4" class="iptTxtA" placeholder="Digite sua mensagem"></textarea>
 							<input type="submit" class="btn btn-success" value="Enviar"/>
 							<input type="reset" class="btn btn-clear" value="Limpar"/>
 						</div>
