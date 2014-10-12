@@ -94,8 +94,8 @@
 							<input type="email" class="iptTxt" placeholder="Confirme seu email" required/>
 							<input type="text" class="iptTxt" placeholder="Digite seu nome de usuário" required/>
 							<input type="password" class="iptTxt" placeholder="Escolha uma Senha" required/>						
-							<input type="button" class="btn btn-clear pull-block" value="Selecione uma foto"/>
-							<input type="submit" class="btn btn-success scroll" id="proximo" value="Próximo"/>					
+							<input type="button" class="btn btn-selecionar pull-block" value="Selecione uma foto"/>
+							<input type="submit" class="btn scroll" id="proximo" value="Próximo"/>					
 					</div>
 				  </div>
 				</div>
@@ -111,16 +111,16 @@
 								<option label="Feminino" value="2">Feminino</option>
 								<option label="Outro" value="3">Outro</option>							
 							</select>
-							<input type="text" class="iptTxt" placeholder="Digite a data de nascimento"/>
+							<input type="text" class="iptTxt" placeholder="Digite a data de nascimento" required/>
 							<select class="iptSel" required>
 								<option label="Você é..." value="">Você é...</option>
 								<option label="Pessoa Física" value="fisica">Pessoa Física</option>
 								<option label="Pessoa Jurídica" value="juridica">Pessoa Jurídica</option>
 							</select>
-							<input type="text" class="iptTxt" placeholder="Digite seu CPF"/>
-							<input type="text" class="iptTxt" placeholder="Informe seu telefone fixo"/>						
-							<input type="text" class="iptTxt" placeholder="Informe seu Celular"/>
-							<input type="button" class="btn btn-success" id="proximo2" value="Próximo"/>
+							<input type="text" class="iptTxt" placeholder="Digite seu CPF" required/>
+							<input type="text" class="iptTxt" placeholder="Informe seu telefone fixo" required/>						
+							<input type="text" class="iptTxt" placeholder="Informe seu Celular" required/>
+							<input type="button" class="btn" id="proximo2" value="Próximo" required/>
 						
 					</div>
 				  </div>
@@ -169,7 +169,7 @@
 								<input type="text" class="iptTxt" placeholder="Endereço" required/>
 								<input type="text" class="iptTxt" placeholder="Bairro" required/>
 								<input type="text" class="iptTxt" placeholder="Número" required/>
-								<input type="submit" class="btn btn-success" value="Cadastrar"/>						
+								<input type="submit" class="btn" value="Cadastrar"/>						
 							</form>
 						</div>
 					  </div>
@@ -197,8 +197,8 @@
 							<input type="text" class="iptTxt" placeholder="Nome"/>
 							<input type="text" class="iptTxt" placeholder="Email"/>
 							<textarea rows="4" class="iptTxtA" placeholder="Digite sua mensagem"></textarea>
-							<input type="submit" class="btn btn-success" value="Enviar"/>
-							<input type="reset" class="btn btn-clear" value="Limpar"/>
+							<input type="submit" class="btn btn-verde" value="Enviar"/>							
+							<input type="reset" class="btn btn-cinza" value="Limpar"/>
 						</div>
 						<div class="col-lg-4">
 							<h3>Encontre-nos na internet</h3>
