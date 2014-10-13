@@ -2,7 +2,7 @@
 <html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Detalhe item</title>
+	<title>Detalhe item l</title>
     <meta name="description" content="Detalhe Item"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
@@ -24,6 +24,19 @@
 			$(".flexslider").flexslider();				
 		});			
     </script>
+	
+	<script type="text/javascript">
+	
+		$(document).ready(function(){
+			$('#campo-pesquisa').hide();			
+			$("#semelhante").click(function(){
+				$('#campo-pesquisa').show();
+			 });
+			 $("#exato").click(function(){
+				$('#campo-pesquisa').hide();
+			 });
+		});
+	</script> 
 	
 	<script>	
 		$('#myTab a').click(function (e) {
@@ -107,8 +120,7 @@
 							<li><strong>Detalhe 1: </strong><span>Descrição do detalhe 1</span></li>
 							<li><strong>Detalhe 2: </strong><span>Descrição do detalhe 2</span></li>
 							<li><strong>Detalhe 3: </strong><span>Descrição do detalhe 3</span></li>
-							<li><strong>Detalhe 4: </strong><span>Descrição do detalhe 4</span></li><br/>
-							<li><a href="login.html"><input type="submit" class="btn" value="Enviar Oferta"/></a></li>
+							<li><strong>Detalhe 4: </strong><span>Descrição do detalhe 4</span></li>
 						</ul>
 				  </div>
 				  <div class="tab-pane fade" id="profile">
@@ -136,6 +148,115 @@
 			</div>
 		</div>	
 	</div>
+	<div class="container">
+		<hr width="70%" />
+		<h2 class="desejo-item">Envie sua oferta</h2>
+		<div class="row page-item">
+		  <form>
+			<div class="col-md-6"><label><input type="radio" id="exato" name="ofereco"> Vou oferecer o que se deseja</label></div>
+			<div class="col-md-6"><label><input type="radio" id="semelhante" name="ofereco"> Vou oferecer algo semelhante</label></div>
+		</div>
+		<div><input type="text" id="campo-pesquisa" placeholder="Pesquise uma categoria"/></div>
+			<div class="row page-item">
+				<div class="col-md-6">					
+						<label>Estado de conservação</label>
+						<select class="iptSel" required>
+							<option label="Selecione" value=""></option>
+							<option label="Novo" value="1"></option>
+							<option label="Semi-novo" value="2"></option>
+							<option label="Usado" value="3"></option>							
+						</select>
+						
+						<label>Garantia</label>
+						<select class="iptSel" required>
+							<option label="Selecione" value=""></option>
+							<option label="30 dias" value="30"></option>
+							<option label="90 dias" value="90"></option>							
+							<option label="120 dias" value="120"></option>
+							<option label="365 dias" value="365"></option>
+						</select>
+						
+						<label>Estado</label>
+						<select class="iptSel" required>
+							<option label="Selecione seu Estado" value="">Selecione seu Estado</option>
+							<option label="AC" value="1">AC</option>
+							<option label="AL" value="2">AL</option>
+							<option label="AP" value="3">AP</option>
+							<option label="AM" value="4">AM</option>
+							<option label="BA" value="5">BA</option>
+							<option label="CE" value="6">CE</option>
+							<option label="DF" value="7">DF</option>
+							<option label="ES" value="8">ES</option>
+							<option label="GO" value="9">GO</option>
+							<option label="MA" value="10">MA</option>
+							<option label="MT" value="11">MT</option>
+							<option label="MS" value="12">MS</option>
+							<option label="MG" value="13">MG</option>
+							<option label="PA" value="14">PA</option>
+							<option label="PB" value="15">PB</option>
+							<option label="PR" value="16">PR</option>
+							<option label="PE" value="17">PE</option>
+							<option label="PI" value="18">PI</option>
+							<option label="RJ" value="19">RJ</option>
+							<option label="RN" value="20">RN</option>
+							<option label="RS" value="21">RS</option>
+							<option label="RO" value="22">RO</option>
+							<option label="RR" value="23">RR</option>
+							<option label="SC" value="24">SC</option>
+							<option label="SP" value="25">SP</option>
+							<option label="SE" value="26">SE</option>
+							<option label="TO" value="27">TO</option>
+						</select>
+						
+						<label>Município</label>
+						<select class="iptSel" required>
+							<option label="Selecione seu Município" value=""></option>
+							<option label="Município 1" value="1"></option>
+							<option label="Município 2" value="2"></option>
+							<option label="Município 3" value="3"></option>							
+						</select>
+
+						
+						<label>Envie até 3 imagens do seu desejo *</label>
+						<span><input type="submit" class="btn btn-cinza" name="arquivo1" value="Arquivo1"/></span>
+						<span><input type="submit" class="btn btn-cinza" name="arquivo2" value="Arquivo2"/></span>
+						<span><input type="submit" class="btn btn-cinza" name="arquivo3" value="Arquivo3"/></span>						
+						
+						<p>* Formatos permitidos: jpeg, jpg, gif e png</p>
+						<p>  Tamanho máximo do arquivo 5mb</p>
+						<p>  Resolução ideal: 480 x 720 pixels ou mais</p>
+						<p>  Resolução ideal: 480 x 720 pixels ou mais</p>
+							
+				</div>
+			
+				<div class="col-md-6">					
+					<label>Nota Fiscal
+						<select class="iptSel" required>
+							<option label="Selecione" value=""></option>
+							<option label="Sim" value="sim"></option>
+							<option label="Não" value="nao"></option>
+						</select>
+					</label>
+					<label>Oferta válida até
+						<input type="text" class="iptTxt" name="input1"/>
+					</label>
+					
+					<label>Quantidade
+						<input type="text" class="iptTxt" name="quantidade"/>
+					</label>
+					
+					<label>Valor
+						<input type="text" class="iptTxt" name="valor"/>
+					</label>
+					
+					<input class="btn btn-vermelho" type="submit" value="Cancelar"/>
+					<input class="btn btn-verde" type="submit" value="Enviar"/>							
+					
+				</form>		
+			</div>			
+		 </div>
+	</div>
+	
 	
 	<footer>
 		<div class="jumbotron">

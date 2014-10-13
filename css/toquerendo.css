@@ -198,7 +198,12 @@ img.brand{width:400px;max-width:100%}
     padding-right:1px;
 	
 }
-
+div.page-item{
+	margin-top:3%;	
+}
+div.slide-item{
+	margin-bottom:3%;
+}
 .desejo-item > div > h4{
 	font-size:20px;
 	color:#5cb85c;
@@ -242,6 +247,9 @@ h2.desejo-item{
 	padding-bottom:1%;
 	text-align:center;
 	
+}
+.como-funciona{
+	text-align:center;
 }
 .numero img{
 	float:left;
@@ -496,14 +504,20 @@ footer .col-lg-4 p{
 	margin-bottom:2%;
 	margin-top:2%;
 }
-div.slide-item{
-	margin-bottom:7%;
-}
+
 .tab-item{
 	border-bottom:1px solid #ddd;
 	border-left:1px solid #ddd;
 	border-right:1px solid #ddd;
 	color:gray;
+}
+.nav-tabs>li>a{
+	color:#FFF;
+	background:#04b4ae;
+}
+.nav-tabs>li>a:hover{
+	color:gray;
+	background:#E7E7E7;
 }
 .list{
 	list-style:none;
@@ -576,6 +590,7 @@ ul.em-linha{
 div.meus-desejos{
 	border: solid 1px #E8E8E8;
 	box-shadow: 0 2px 2px 0 #dbdbdb;
+	margin-bottom:5%;
 }
 div.meus-desejos img{
 	margin-bottom:5%;
@@ -622,6 +637,13 @@ h2.resultados{
 	height:70px;
 	padding-top: 1%;
 	}
+	div.meus-desejos{
+		display:inline-block;		
+	}
+	div.col-md-3.colunas-desejos{
+		display:inline-block;
+		width:49%;
+	}
 }
 
 @media screen and (max-width:768px){
@@ -632,6 +654,13 @@ h2.resultados{
 	.pesquisa{
 	height:70px;
 	padding-top: 1%;
+	}
+	div.meus-desejos{
+		display:inline-block;		
+	}
+	div.col-md-3.colunas-desejos{
+		display:inline-block;
+		width:49%;
 	}
 }
 	
@@ -669,6 +698,35 @@ h2.resultados{
 	}
 	.nav-pills li{
 		font-size:11px;
+	}
+	div.content.informacao > div > h2{
+		font-size:20px;
+	}
+	input.btn-verde{
+		width:40%;
+	}	
+	input.btn-vermelho{
+		width:40%;
+	}
+	input.btn-cinza{
+		width:40%;
+	}
+	.nav>li>a {
+		padding: 5px 10px;
+	}		
+		
+	ul.list.caracter input.btn-cinza{
+		display:block;
+	}
+	div.meus-desejos{
+		display:block;		
+	}
+	div.col-md-3.colunas-desejos{
+		display:block;
+		width:100%;
+	}
+	div.slide-item{
+	margin-bottom:7%;
 	}
 }
 

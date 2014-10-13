@@ -14,15 +14,7 @@
     <script>
     	!window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>");
     </script>
-	    
-	<script type="text/javascript">
-		jQuery(document).ready(function($) { 
-			$(".scroll").click(function(event){        
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
-		   });
-		});
-	</script>
+	 
 	<!-- [if lt IE 9]>
     	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -130,6 +122,7 @@
 				<div class="panel panel-default paineis">
 				  <div class="panel-heading paineis"><h3>Dados Gerais</h3></div>
 				  <div class="panel-body">
+					<form>
 					<ul class="list caracter">
 						<li>
 							<label>Titulo<br/>
@@ -237,7 +230,7 @@
 							<input class="btn btn-vermelho" type="submit" value="Cancelar"/>
 							<input class="btn btn-verde" type="submit" value="Cadastrar"/>							
 						</ul>
-						
+				</form>		
 					  </div>
 				</div>
 			</div>			
