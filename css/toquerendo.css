@@ -1,5 +1,6 @@
 body{
-	font-family: Century Gothic;
+	font-family:Helvetica, Arial;
+	color:gray;
 }
 
 header{
@@ -10,8 +11,9 @@ a:hover, a:active, a:focus {
 }
 h1, h2, h3, h4, h5, h6{
 	font-weight:bolder;
+	color:gray;
 }
-img{
+img{copy-right
 	border:0;
 }
 
@@ -20,11 +22,12 @@ input[type="email"], input[type="text"], input[type="password"], textarea, selec
     border-radius: .25em;
     border:1px solid #FFF;
     color:#333;
-    font-family:Century Gothic, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size:18px;
     padding:.75em;
 	margin-bottom:1%;
     width:100%;
+	color:gray;
 }
 input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focus, select:focus, textarea:focus{
 	background:#FFF;
@@ -164,15 +167,42 @@ input.btn-vermelho:focus{
 	background:#e4322d;
 	box-shadow: 0px 4px 0px #ac2925;/*vermelho escuro*/
 }
+.checkbox-pesquisa{
+	padding-top:25px;
+}
+.select-pesquisa{
+	padding-top:15px;
+}
+.input-pesquisa{
+	margin-top:10px;
+}
 .topBar{
-	background:#E7E7E7;
+	background:#eff3f7;
 	padding:5px;
+}
+::-webkit-input-placeholder {
+   color: gray;
+}
+
+:-moz-placeholder {
+   color: gray;
+}
+
+::-moz-placeholder {
+   color: gray;  
+}
+
+:-ms-input-placeholder {  
+   color: gray; 
 }
 .topBar .container .nav > li > a {
 	color:gray;
     position: relative;
     display: block;
     padding: 0 15px;
+}
+.nav > li > a:hover{
+	background:#eff3f7;
 }
 .brand{
 	display:block;
@@ -209,7 +239,6 @@ div.slide-item{
 	color:#5cb85c;
 	font-weight:normal;
 	margin-bottom:5%;
-	text-align:center;
 }
 h2.desejo-item{	
 	color:#5cb85c;
@@ -441,6 +470,7 @@ footer .col-lg-4 p{
 }
 .copy-right{
 	background:#04b4ae;
+	color:#FFF;
 	margin:0 auto;
 	text-align:center;
 }
@@ -459,14 +489,7 @@ footer .col-lg-4 p{
 	color:gray;
 }
 .informacao{
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(45deg,  rgba(255,255,255,1) 0%, rgba(241,241,241,1) 75%, rgba(239,239,239,1) 76%, rgba(246,246,246,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(75%,rgba(241,241,241,1)), color-stop(76%,rgba(239,239,239,1)), color-stop(100%,rgba(246,246,246,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 75%,rgba(239,239,239,1) 76%,rgba(246,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 75%,rgba(239,239,239,1) 76%,rgba(246,246,246,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 75%,rgba(239,239,239,1) 76%,rgba(246,246,246,1) 100%); /* IE10+ */
-	background: linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 75%,rgba(239,239,239,1) 76%,rgba(246,246,246,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background:#eff3f7;
 	box-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
 }
 .informacao h2{
@@ -478,6 +501,9 @@ footer .col-lg-4 p{
 }
 .panel{
 	margin:0 auto;
+}
+.paineis h3{
+	color:#FFF;
 }
 .panel-default.paineis{
 	margin-bottom:3%;
@@ -531,6 +557,7 @@ ul.caracter li{
 	margin-bottom:3%;
 }
 input.iptTxt{
+	color:gray;
 	font-size:14px;
 	text-align:left;
 	padding:10px;	
@@ -566,7 +593,7 @@ ul.menu-conta img{
 }
 .menu-conta a{
 	border-left:2px solid #FFF;
-	color: #727878;
+	color: gray;
 	display:block;
 	padding:10px;
 	margin-bottom:1%;
