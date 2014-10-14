@@ -1,17 +1,150 @@
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('../fonts/opensans-italic.eot');
+    src: url('../fonts/opensans-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-italic.woff2') format('woff2'),
+         url('../fonts/opensans-italic.woff') format('woff'),
+         url('../fonts/opensans-italic.ttf') format('truetype'),
+         url('../fonts/opensans-italic.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansbold_italic';
+    src: url('../fonts/opensans-bolditalic.eot');
+    src: url('../fonts/opensans-bolditalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bolditalic.woff2') format('woff2'),
+         url('../fonts/opensans-bolditalic.woff') format('woff'),
+         url('../fonts/opensans-bolditalic.ttf') format('truetype'),
+         url('../fonts/opensans-bolditalic.svg#open_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular.eot');
+    src: url('../fonts/opensans-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular.woff2') format('woff2'),
+         url('../fonts/opensans-regular.woff') format('woff'),
+         url('../fonts/opensans-regular.ttf') format('truetype'),
+         url('../fonts/opensans-regular.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold.eot');
+    src: url('../fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold.woff2') format('woff2'),
+         url('../fonts/opensans-bold.woff') format('woff'),
+         url('../fonts/opensans-bold.ttf') format('truetype'),
+         url('../fonts/opensans-bold.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+div.imagens img{
+		width:100%;
+}
+
+div.blocos{
+	margin:0 auto;
+	max-width:390px;
+	width:100%;
+
+}
+.blocos > div > img, .blocos > div > h4, .blocos > div > p{
+	float:left;
+	padding-left:5%;
+}
+.blocos > div > img{
+	margin:0 auto;
+}
+.blocos > div > p{
+	float:left;
+	display:inline-block;
+	color:#04b4ae;
+	font-size:14px;
+	max-width:240px;
+	width:100%;
+	margin:0;
+}
+.blocos h4{
+	color:#FFF;
+	max-width:210px;
+	width:100%
+}
+div.imagem-bloco1{
+	display:inline-block;
+	height:149px;
+	width:18%;
+}
+div.imagem-bloco2{
+	display:inline-block;
+	height:149px;
+	width:29%;
+}
+div.imagem-bloco3{
+	display:inline-block;
+	height:149px;
+	width:29%;
+}
+div.texto-bloco1{
+	display:inline-block;
+	height:149px;
+	width:71%;
+	vertical-align:top;
+}
+div.texto-bloco2{
+	display:inline-block;
+	padding-left:5%;
+	height:149px;
+	width:60%;
+}
+div.texto-bloco3{
+	display:inline-block;
+	padding-left:5%;
+	height:149px;
+	width:69%;
+}
+div.texto-bloco3 > p{
+	max-width:250px;
+	width:100%;
+}
+div.seta{
+	display:inline-block;
+	margin-bottom:12%;
+	width:7%;
+}
+div.seta img{
+	width:80%;
+}
 body{
-	font-family:Helvetica, Arial;
-	color:gray;
+	font-family:"open_sansregular", Arial;
+	color:#333;
 }
 
 header{
 	background:#04b4ae;
 }
+a{
+	color:#333;
+}
 a:hover, a:active, a:focus {
      outline: 0;
+	 color:#333;
 }
 h1, h2, h3, h4, h5, h6{
 	font-weight:bolder;
-	color:gray;
+	color:#333;
+}
+h2{
+    border-bottom:2px solid;
+	margin:0;
 }
 img{copy-right
 	border:0;
@@ -20,18 +153,18 @@ img{copy-right
 input[type="email"], input[type="text"], input[type="password"], textarea, select{
     background:#eff3f7;
     border-radius: .25em;
-    border:1px solid #FFF;
+    border:1px solid #333;
     color:#333;
     font-family: Helvetica, sans-serif;
     font-size:18px;
     padding:.75em;
 	margin-bottom:1%;
     width:100%;
-	color:gray;
+	color:#333;
 }
 input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focus, select:focus, textarea:focus{
 	background:#FFF;
-	border:1px solid #e3eaea;
+	border:1px solid #333;
 }
 input[type="submit"], input[type="button"], input[type="reset"]{
 	background:#04b4ae;
@@ -67,6 +200,7 @@ label {
 	margin-bottom: 5px;
 	font-weight: normal;
 	font-size:18px;
+	color: #333;
 }
 input.btn-pro{
 	background:#5cb85c;	
@@ -170,6 +304,12 @@ input.btn-vermelho:focus{
 .checkbox-pesquisa{
 	padding-top:25px;
 }
+.padding-top-20{
+	padding-top:20px;
+}
+.margin-bottom-20{
+	padding-bottom:20px;
+}
 .select-pesquisa{
 	padding-top:15px;
 }
@@ -177,32 +317,37 @@ input.btn-vermelho:focus{
 	margin-top:10px;
 }
 .topBar{
-	background:#eff3f7;
+	background:#FFF;
 	padding:5px;
 }
+
+div.topBar > div > ul.nav-pills{
+	margin-top: 0;
+}
 ::-webkit-input-placeholder {
-   color: gray;
+   color: #333;
 }
 
 :-moz-placeholder {
-   color: gray;
+   color: #333;
 }
 
 ::-moz-placeholder {
-   color: gray;  
+   color: #333;  
 }
 
 :-ms-input-placeholder {  
-   color: gray; 
+   color: #333; 
 }
 .topBar .container .nav > li > a {
-	color:gray;
+	color:#333;	
     position: relative;
     display: block;
     padding: 0 15px;
 }
 .nav > li > a:hover{
-	background:#eff3f7;
+	background:none;
+	text-decoration:underline;	
 }
 .brand{
 	display:block;
@@ -213,9 +358,10 @@ input.btn-vermelho:focus{
 img.brand{width:400px;max-width:100%}
 
 .pesquisa{
-	height:126px;
+	
 	padding-top:7%;
 	vertical-align:bottom;
+	text-align:right;
 }
 
 .desejo-item{	
@@ -225,8 +371,7 @@ img.brand{width:400px;max-width:100%}
 	height:200px;
 	margin-top:3%;
 	padding-left:0;
-    padding-right:1px;
-	
+    padding-right:1px;	
 }
 div.page-item{
 	margin-top:3%;	
@@ -234,11 +379,16 @@ div.page-item{
 div.slide-item{
 	margin-bottom:3%;
 }
-.desejo-item > div > h4{
+div.desejo-item > div > h4{
 	font-size:20px;
-	color:#5cb85c;
-	font-weight:normal;
+	color:#333;	
 	margin-bottom:5%;
+}
+div.desejo-item .produto{
+	color:#5cb85c;
+}
+.produto h4{
+	color:#5cb85c;
 }
 h2.desejo-item{	
 	color:#5cb85c;
@@ -258,7 +408,9 @@ h2.desejo-item{
 .desejo-item > div > ul > li{
 	font-size:18px;
 }
-
+.numero1{
+	width:120px;
+}
 .jumbotron{
 	background: #121212; 
 	background: -moz-linear-gradient(top, #121212 0%, #222222 50%, #121212 100%); 
@@ -273,10 +425,22 @@ h2.desejo-item{
 	color:#FFF;
 }
 .jumbotron h2{
-	padding-bottom:1%;
 	text-align:center;
-	
+	margin-bottom:3%;
+	color:#FFF;
+	border-bottom:0;
 }
+.jumbotron h4{
+	text-align:center;
+	margin-bottom:3%;
+	color:#FFF;
+	border-bottom:0;
+}
+/*
+.jumbotron > .container > .row > .col-lg-4{
+	margin-bottom:3%;
+	margin-top:3%;
+}*/
 .como-funciona{
 	text-align:center;
 }
@@ -286,43 +450,47 @@ h2.desejo-item{
 }
 p.passos {
 	color:#04b4ae;
-	font-size:14px;
+	font-size:16px;
+	font-weight:bold;
 }
-div.seta{
-	margin-top:50%;
-}
+
 .inicio{
 	background-image: url(../img/bg4.png);
 	vertical-align: middle;
 }
-.inicio > div.container{
-	padding-left:0;
-	padding-right:0;
-}
+
 .top-margin-10{
 	padding:35px;
 }
-.nav-pills.produto{
-	margin-bottom:2%;
+.nav-pills{
+	margin-top:1%;
+	margin-bottom:1%;
 }
 .nav-pills.produto a{	
 	border-bottom: 2px solid #FFF;
-	color: #727878;
+	color: #333;
 	display:block;
 	padding:10px;
 }
 .nav-pills.produto a:hover{
 	background:#FFF;
-	color: #5cb85c;
+	color: #228B22;
 	display:block;
-	border-bottom: 2px solid #5cb85c;
+	border-bottom: 2px solid #228B22;
 }
 .nav-pills.produto > li.active > a{
 	background:#FFF;
-	color: #5cb85c;
-	border-bottom: 2px solid #5cb85c;
+	color: #228B22;
+	border-bottom: 2px solid #228B22;
 }
-
+ul.nav .nav-tabs .produto li {
+    border-bottom: 1px solid #228B22;
+}
+.nav {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: none outside none;
+}
 
 /*-----------------*/
 .nav-pills.servicos{
@@ -330,7 +498,7 @@ div.seta{
 }
 .nav-pills.servicos a{	
 	border-bottom: 2px solid #FFF;
-	color: #727878;
+	color: #333;
 	display:block;
 	padding:10px;
 }
@@ -360,6 +528,7 @@ div.seta{
 .item h4{
 	padding-left:5%;
 	padding-right:5%;
+	height: 40px;
 }
 p.user-item{
 	font-size:13px;
@@ -386,6 +555,9 @@ div.img-item {
 }
 .produto{
 	color: #228B22;
+}
+.produto h2{
+    border-bottom:#228B22;
 }
 
 a.btn-pro {
@@ -486,15 +658,16 @@ footer .col-lg-4 p{
 	padding: 8px 0px;
 }
 .breadcrumb a{
-	color:gray;
+	color:#333;
 }
 .informacao{
 	background:#eff3f7;
 	box-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
 }
 .informacao h2{
-	color:gray;
+	color:#333;
 	font-weight:normal;
+	border-bottom:0;
 	margin:1% auto;
 	text-align:center;
 	width:80%;
@@ -502,6 +675,14 @@ footer .col-lg-4 p{
 .panel{
 	margin:0 auto;
 }
+.pesquisa-avancada{
+	color:#FFF;
+	font-weight:bold;
+}
+.paineis{
+	box-shadow: 0 0 8px 1px #dbdbdb;
+}
+
 .paineis h3{
 	color:#FFF;
 }
@@ -532,17 +713,17 @@ footer .col-lg-4 p{
 }
 
 .tab-item{
-	border-bottom:1px solid #ddd;
-	border-left:1px solid #ddd;
-	border-right:1px solid #ddd;
-	color:gray;
+	border-bottom:1px solid #228B22;
+	border-left:1px solid #228B22;
+	border-right:1px solid #228B22;
+	color:#333;
 }
 .nav-tabs>li>a{
 	color:#FFF;
 	background:#04b4ae;
 }
 .nav-tabs>li>a:hover{
-	color:gray;
+	color:#333;
 	background:#E7E7E7;
 }
 .list{
@@ -557,7 +738,7 @@ ul.caracter li{
 	margin-bottom:3%;
 }
 input.iptTxt{
-	color:gray;
+	color:#333;
 	font-size:14px;
 	text-align:left;
 	padding:10px;	
@@ -576,13 +757,13 @@ select.iptSel{
 .minha-conta > div{
 	vertical-align:top;
 }
-.minha-conta h2{
+/*.minha-conta h2{
 	color:#5cb85c;
 	border-bottom:2px solid #5cb85c;
 	font-size:30px;
 	font-weight:normal;
 	margin-top:0;
-}
+}*/
 ul.menu-conta{
 	list-style:none;
 }
@@ -593,19 +774,19 @@ ul.menu-conta img{
 }
 .menu-conta a{
 	border-left:2px solid #FFF;
-	color: gray;
+	color: #333;
 	display:block;
 	padding:10px;
 	margin-bottom:1%;
 	text-decoration:none;
 }
 .menu-conta a:hover{
-	color: #5cb85c;
-	border-left: 2px solid #5cb85c;
+	background-color: #F2F2F2;
+	border-left: 2px solid #333;
 }
 .menu-conta > li.active > a{
-	color: #5cb85c;
-	border-left: 2px solid #5cb85c;
+	background-color: #F2F2F2;
+	border-left: 2px solid #333;
 }
 ul.em-linha{
 	list-style:none;
@@ -615,7 +796,7 @@ ul.em-linha{
 	vertical-align:top;
 }
 div.meus-desejos{
-	border: solid 1px #E8E8E8;
+	border: solid 1px #333;
 	box-shadow: 0 2px 2px 0 #dbdbdb;
 	margin-bottom:5%;
 }
@@ -625,7 +806,7 @@ div.meus-desejos img{
 	width:250px;
 }
 .minhas-ofertas{
-	color:gray;
+	color:#333;
 }
 .minhas-ofertas img{
 	margin-top:7%;
@@ -646,7 +827,8 @@ div.meus-desejos p{
 	text-decoration:none;
 }
 .meus-desejos > div > a:hover{
-	background:gray;
+	background-color: #F2F2F2;
+	color:#333;;
 }
 div.resultados{
 	margin-bottom:2%;
@@ -655,13 +837,31 @@ h2.resultados{
 	color:#5cb85c;
 	font-weight:normal;
 }
+div.filtro{
+	margin-bottom:3%;
+	
+}
+.setenta{
+	width:70%;
+}
+ul.list-horizontal{
+	list-style:none;
+	padding:0;	
+}
+.list-horizontal li{
+	padding-right:3%;	
+	display:inline-block;
+}
+
+
+
 @media screen and (max-width:991px){
 	img.brand{
 		margin:0 auto;
 		text-align:center;
 	}
 	.pesquisa{
-	height:70px;
+	
 	padding-top: 1%;
 	}
 	div.meus-desejos{
@@ -670,6 +870,9 @@ h2.resultados{
 	div.col-md-3.colunas-desejos{
 		display:inline-block;
 		width:49%;
+	}
+	div.seta{
+		display:none;
 	}
 }
 
@@ -679,7 +882,7 @@ h2.resultados{
 		text-align:center;
 	}
 	.pesquisa{
-	height:70px;
+	
 	padding-top: 1%;
 	}
 	div.meus-desejos{
@@ -689,35 +892,42 @@ h2.resultados{
 		display:inline-block;
 		width:49%;
 	}
+	div.seta{
+		display:none;
+	}
+}
+
+@media screen and (max-width:640px){
+	
+	div.seta{
+		display:none;
+	}
+	p.passos{
+		font-size:13px;
+		text-align:left;
+	}
+	 h4.passos{
+		text-align:left;
+	}
 }
 	
 @media screen and (max-width:480px){
 	img.brand{
 		margin:0 auto;
 		text-align:center;
-	}
-	.col-lg-4.passos{
-		margin-bottom:5%;
-		width:100%;
-	}
+	}	
 	
 	.numero img{
 		margin:0 auto;
 		display:block;
 		float:none;
 	}
-	.numero1{
-		margin-left:8%;
-		margin-right:2%;
-	}
-	.numero2{
-		margin-right:2%;
-	}
+	
 	p.passos{
 		font-size:13px;
 		text-align:center;
 	}
-	.passos h4{
+	h4.passos {
 		text-align:center;
 	}
 	div.seta{
@@ -755,8 +965,30 @@ h2.resultados{
 	div.slide-item{
 	margin-bottom:7%;
 	}
+	/******--------------------*******/
+	div.blocos{
+		margin-bottom:10%;
+	}
+	div.imagem-bloco1{
+		width:35%;
+	}
+	
+	div.imagem-bloco1 img{				
+		margin-left:19%;		
+	}
+	div.texto-bloco1{
+	width:58%;
+	}
+	div.texto-bloco2{
+	padding-left:7%;
+	}
+	div.texto-bloco3{
+	padding-left:7%;
+	}
+	.blocos > div > p{
+	font-size:12px;
+	}
 }
-
 
 /*
 @media (max-width: 480px) and (orientation: landscape) {}

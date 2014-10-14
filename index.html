@@ -38,7 +38,11 @@
 						<a href="index.html"><img class="brand" src="img/logo.png"/></a>
 					</div>					
 					<div class="col-md-6">
-				         <div class="pesquisa"><input type="text" name="pesquisa" placeholder="O que você deseja?"/></div>
+				         <div class="pesquisa">
+							<input type="text" name="pesquisa" placeholder="O que você deseja?"/>
+							<a class="pesquisa-avancada" href="resultados.html">Pesquisa Avançada</a>
+						 </div>
+						 
 					</div>
 				</div>										
 			</div>
@@ -47,62 +51,44 @@
 		<!-- fim header -->		
 		<div class="jumbotron">
 			<div class="container">
+			
+			
 				<h2>Uma nova forma de comprar pela internet</h2>
-				<div class="row">					
-					<div class="col-lg-4">
-						<div class="row">							
-							<div class="col-md-2 numero">
-								<img src="img/bg1.png" />
-							</div>
-							<div class="col-md-7">
-								<h4>Publique seu desejo</h4>
-								<p class="passos">Os desejos são classificados por Produto ou Serviço.
-								Temos diversas categorias que auxiliam no cadastro do desejo</p>
-							</div>
-							<div class="col-md-2"><div class="seta"><img src="img/seta.png"/></div></div>
-						</div>
+				<div class="row">
+					<div class="col-md-4 como-funciona">
+						<div><img class="numero1" src="img/bg12.png" /></div>
+						<div><h4>Publique seu desejo</h4></div>
+						<div><p class="passos">Os desejos são classificados por Produto ou Serviço.
+								Temos diversas categorias que auxiliam no cadastro do desejo</p></div>
 					</div>
-					
-					<div class="col-lg-4">
-						<div class="row">
-							<div class="col-md-4 numero">
-								<img src="img/bg2.png" />
-							</div>
-							<div class="col-md-6">
-								<h4>Receba oferta de interessados</h4>
-								<p class="passos">Você receberá ofertas de vendedores e poderá avaliar
-								as ofertas dos seus desejo</p>
-							</div>
-							<div class="col-md-2"><div class="seta"><img src="img/seta.png"/></div></div>
-						</div>
+					<div class="col-md-4 como-funciona">
+						<div><img class="numero1" src="img/bg22.png" /></div>
+						<div><h4>Recebe ofertas</h4></div>
+						<div><p class="passos">Você receberá ofertas de vendedores
+						e poderá avaliar as ofertas dos seus desejo</p></div>
 					</div>
-					<div class="col-lg-4">
-						<div class="row">
-							<div class="col-md-4 numero">
-								<img src="img/bg3.png" />
-							</div>
-							<div class="col-md-8">
-								<h4>Negocie e realize seu desejo</h4>
-								<p class="passos">Negocie diretamente com o vendedor que fez a oferta 
-								e concretize sua compra</p>
-							</div>
-							
-						</div>
+					<div class="col-md-4 como-funciona">
+						<div><img class="numero1" src="img/bg33.png" /></div>
+						<div><h4>Negocie e realize seu desejo</h4></div>
+						<div><p class="passos">Negocie diretamente com o vendedor
+						que fez a oferta e concretize sua compra</p></div>
 					</div>
-				</div>		
+				</div>	
 			</div>		
 		</div>
 		<!-- fim jumbotron -->
 		
-		<div class="content inicio top-margin-10">
-			<div class="container">				
-				<div class="col-md-6 text-center">
-					<a  href="login.html"><input type="button" class="btn" value="Acessar conta" /></a>
-					<a  href="cadastro.html"><input type="button" class="btn" value="Criar conta" /></a>
-				</div>
-				<div class="col-md-6 text-center">
-					<a href="desejo-item.html"><input type="button" class="btn btn-pro" value="Produto" /></a>
-					<a href="desejo-item.html"><input type="button" class="btn btn-ser" href="desejo-item.html" value="Serviço" /></a>
+		<div class="content inicio">
+			<div class="container">	
+				<div class="row  padding-top-20">
+					<div class="col-md-6 text-center">
+						<a  href="login.html"><input type="button" class="btn" value="Acessar conta" /></a>
+						<a  href="cadastro.html"><input type="button" class="btn" value="Criar conta" /></a>
+					</div>
+					<div class="col-md-6 text-center">
+						<a href="desejo-item.html"><input type="button" class="btn btn-pro" value="Produto" /></a>
+						<a href="desejo-item.html"><input type="button" class="btn btn-ser" href="desejo-item.html" value="Serviço" /></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -110,155 +96,167 @@
 		
 		
 		<div class="container">
-			<h2 class="produto">Produtos</h2>
-			<ul class="nav nav-pills produto">
-			  <li class="active"><a href="#"><span><i class="icon icon-office"></i></span> Imóveis</a></li>
-			  <li><a href="#"><span><i class="icon icon-truck"></i></span> Veículos</a></li>
-			  <li><a href="#"><span><i class="icon icon-cart"></i></span> + Produtos</a></li>
-			</ul>
 			<div class="row">
-				<div class="col-md-3 itens">
-					<div class="item item-prod">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="produto">Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-prod">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-pro" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+				<div class="col-md-12 padding-top-20">
+				<h2 class="produto">Produtos</h2>
+				<ul class="nav nav-pills produto">
+				  <li><a href="#"><span><i class="icon icon-office"></i></span> Imóveis</a></li>
+				  <li><a href="#"><span><i class="icon icon-truck"></i></span> Veículos</a></li>
+				  <li><a href="#"><span><i class="icon icon-cart"></i></span> + Produtos</a></li>
+				</ul>
+				<div class="row">
+					<div class="col-md-3 itens colunas-desejos">
+						<div class="item item-prod">
+							<p class="user-item">Felipe tá querendo</p>
+							<h4 class="produto">Moto Hornet 250 cilindradas</h4>
+							<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+							<div class="rodape-item rodape-prod">
+								<p>Valparaíso de Goiás - GO</p>
+								<a class="btn-pro" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 itens colunas-desejos">
+						<div class="item item-prod">
+							<p class="user-item">Felipe tá querendo</p>
+							<h4 class="produto">Moto Hornet 250 cilindradas</h4>
+							<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+							<div class="rodape-item rodape-prod">
+								<p>Valparaíso de Goiás - GO</p>
+								<a class="btn-pro" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 itens colunas-desejos">
+						<div class="item item-prod">
+							<p class="user-item">Felipe tá querendo</p>
+							<h4 class="produto">Moto Hornet 250 cilindradas</h4>
+							<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+							<div class="rodape-item rodape-prod">
+								<p>Valparaíso de Goiás - GO</p>
+								<a class="btn-pro" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 itens colunas-desejos">
+						<div class="item item-prod">
+							<p class="user-item">Felipe tá querendo</p>
+							<h4 class="produto">Moto Hornet 250 cilindradas</h4>
+							<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+							<div class="rodape-item rodape-prod">
+								<p>Valparaíso de Goiás - GO</p>
+								<a class="btn-pro" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 itens">
-					<div class="item item-prod">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="produto">Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-prod">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-pro" href="#">Enviar Oferta</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 itens">
-					<div class="item item-prod">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="produto">Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-prod">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-pro" href="#">Enviar Oferta</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 itens">
-					<div class="item item-prod">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="produto">Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-prod">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-pro" href="#">Enviar Oferta</a>
-						</div>
-					</div>
 				</div>
 			</div>
 			<!-- fim servicos -->
-			
-			<h2 class="servicos">Serviços</h2>
-			<ul class="nav nav-pills servicos">
-			  <li class="active"><a href="#"><span><i class="icon icon-office"></i></span> Imóveis</a></li>
-			  <li><a href="#"><span><i class="icon icon-truck"></i></span> Veículos</a></li>
-			  <li><a href="#"><span><i class="icon icon-cart"></i></span> + Serviços</a></li>
-			</ul>
 			<div class="row">
-				<div class="col-md-3 itens">
-					<div class="item item-serv">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-serv">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-ser" href="#">Enviar Oferta</a>
+				<div class="col-md-12 padding-top-20">
+					<h2 class="servicos">Serviços</h2>
+					<ul class="nav nav-pills servicos">
+					  <li><a href="#"><span><i class="icon icon-office"></i></span> Imóveis</a></li>
+					  <li><a href="#"><span><i class="icon icon-truck"></i></span> Veículos</a></li>
+					  <li><a href="#"><span><i class="icon icon-cart"></i></span> + Serviços</a></li>
+					</ul>
+					<div class="row">
+						<div class="col-md-3 itens colunas-desejos">
+							<div class="item item-serv">
+								<p class="user-item">Felipe tá querendo</p>
+								<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
+								<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+								<div class="rodape-item rodape-serv">
+									<p>Valparaíso de Goiás - GO</p>
+									<a class="btn-ser" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3 itens">
-					<div class="item item-serv">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-serv">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-ser" href="#">Enviar Oferta</a>
+						<div class="col-md-3 itens colunas-desejos">
+							<div class="item item-serv">
+								<p class="user-item">Felipe tá querendo</p>
+								<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
+								<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+								<div class="rodape-item rodape-serv">
+									<p>Valparaíso de Goiás - GO</p>
+									<a class="btn-ser" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3 itens">
-					<div class="item item-serv">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-serv">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-ser" href="#">Enviar Oferta</a>
+						<div class="col-md-3 itens colunas-desejos">
+							<div class="item item-serv">
+								<p class="user-item">Felipe tá querendo</p>
+								<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
+								<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+								<div class="rodape-item rodape-serv">
+									<p>Valparaíso de Goiás - GO</p>
+									<a class="btn-ser" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3 itens">
-					<div class="item item-serv">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-serv">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-ser" href="#">Enviar Oferta</a>
+						<div class="col-md-3 itens colunas-desejos">
+							<div class="item item-serv">
+								<p class="user-item">Felipe tá querendo</p>
+								<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
+								<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+								<div class="rodape-item rodape-serv">
+									<p>Valparaíso de Goiás - GO</p>
+									<a class="btn-ser" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<h2>Mais Vistos</h2>
+			
 			<div class="row">
-				<div class="col-md-3 itens">
-					<div class="item item-prod">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="produto">Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-prod">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-pro" href="#">Enviar Oferta</a>
+				<div class="col-md-12 padding-top-20">
+					<h2>Mais Vistos</h2>
+					<div class="row padding-top-20">
+						<div class="col-md-3 itens colunas-desejos">
+							<div class="item item-prod">
+								<p class="user-item">Felipe tá querendo</p>
+								<h4 class="produto">Moto Hornet 250 cilindradas</h4>
+								<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+								<div class="rodape-item rodape-prod">
+									<p>Valparaíso de Goiás - GO</p>
+									<a class="btn-pro" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3 itens">
-					<div class="item item-serv">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-serv">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-ser" href="#">Enviar Oferta</a>
+						<div class="col-md-3 itens colunas-desejos">
+							<div class="item item-serv">
+								<p class="user-item">Felipe tá querendo</p>
+								<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
+								<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+								<div class="rodape-item rodape-serv">
+									<p>Valparaíso de Goiás - GO</p>
+									<a class="btn-ser" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3 itens">
-					<div class="item item-prod">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="produto">Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-prod">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-pro" href="#">Enviar Oferta</a>
+						<div class="col-md-3 itens colunas-desejos">
+							<div class="item item-prod">
+								<p class="user-item">Felipe tá querendo</p>
+								<h4 class="produto">Moto Hornet 250 cilindradas</h4>
+								<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+								<div class="rodape-item rodape-prod">
+									<p>Valparaíso de Goiás - GO</p>
+									<a class="btn-pro" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3 itens">
-					<div class="item item-serv">
-						<p class="user-item">Felipe tá querendo</p>
-						<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
-						<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
-						<div class="rodape-item rodape-serv">
-							<p>Valparaíso de Goiás - GO</p>
-							<a class="btn-ser" href="#">Enviar Oferta</a>
+						<div class="col-md-3 itens colunas-desejos">
+							<div class="item item-serv">
+								<p class="user-item">Felipe tá querendo</p>
+								<h4 class="servicos">Alugar Moto Hornet 250 cilindradas</h4>
+								<div class="img-item"><a href="page-item.html"><img src="img/moto.png"/></a></div>
+								<div class="rodape-item rodape-serv">
+									<p>Valparaíso de Goiás - GO</p>
+									<a class="btn-ser" href="#"><span><i class="glyphicon glyphicon-briefcase"></i></span> Enviar Oferta</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -266,25 +264,25 @@
 			<!--fim mais vistos -->
 			
 			<div class="row">				
-				<div class="col-md-3">
+				<div class="col-md-3 colunas-desejos">
 					<div class="contador">
 						<p class="num-cont">12.754</p>
 						<p>Membros</p>						
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 colunas-desejos">
 					<div class="contador">
 						<p class="num-cont">858.914</p>
 						<p>Desejos</p>						
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 colunas-desejos">
 					<div class="contador">
 						<p class="num-cont">703.180</p>
 						<p>Ofertas</p>						
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 colunas-desejos">
 					<div class="contador">
 						<p class="num-cont">120.800</p>
 						<p>Concluídos</p>						
