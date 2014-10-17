@@ -937,6 +937,30 @@ ul.list-horizontal{
 }
 
 
+.chat{
+	display:inline-block;
+}
+.chat h5{
+	display:inline-block;
+	margin:0;
+	padding:0;
+}
+.chat img{
+	display:inline-block;
+	width:60px;
+	height:60px;
+	vertical-align:bottom;
+	background:blue;
+}
+.chat.mensagem{
+	background:#eff3f7;
+	padding:5px;
+	border-radius: 6px;
+}
+
+
+
+
 
 @media screen and (max-width:991px){
 	img.brand{
