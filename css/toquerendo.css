@@ -155,7 +155,7 @@ input[type="email"], input[type="text"], input[type="password"], textarea, selec
     border-radius: .25em;
     border:1px solid #333;
     color:#333;
-    font-family: Helvetica, sans-serif;
+    font-family: "open_sansregular", Helvetica, sans-serif;
     font-size:18px;
     padding:.75em;
 	margin-bottom:1%;
@@ -172,6 +172,7 @@ input[type="submit"], input[type="button"], input[type="reset"]{
 	box-shadow: 0px 4px 0px #049691;
 	color: #FFF;
 	font-size:1em;
+	font-family: "open_sansregular", Helvetica, sans-serif;
 	width: 180px;
 	padding:12px;
 	margin-bottom:5%;
@@ -193,11 +194,13 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focu
 }
 textarea{
 	resize:none;
+	font-family: "open_sansregular", Helvetica, sans-serif;
 }
 label {
 	display:block;
 	max-width: 100%;
 	margin-bottom: 5px;
+	font-family: "open_sansregular", Helvetica, sans-serif;
 	font-weight: normal;
 	font-size:18px;
 	color: #333;
@@ -769,7 +772,7 @@ footer .col-lg-4 p{
 .nav-tabs.produto {
 	border-bottom: 1px solid #5cb85c;
 }
-.nav-tabs>li>a{
+.nav-tabs.produto>li>a{
 	background:#5cb85c;
 }
 .nav-tabs.produto>li>a:hover{
@@ -780,9 +783,31 @@ footer .col-lg-4 p{
 	color: #5cb85c;
 	border: 1px solid #5cb85c;
 	border-bottom-color: transparent;
+	background:#FFF;
 }
 
-
+/****** tab servicos *********/
+.tab-item.servicos{
+	border-bottom:1px solid #0779ee;
+	border-left:1px solid #0779ee;
+	border-right:1px solid #0779ee;
+}
+.nav-tabs.servicos{
+	border-bottom: 1px solid #0779ee;
+}
+.nav-tabs.servicos>li>a{
+	background:#0779ee;
+}
+.nav-tabs.servicos>li>a:hover{
+	border-bottom-color: #0779ee;
+	text-decoration:none;
+}
+.nav-tabs.servicos>li.active>a, .nav-tabs.servicos>li.active>a:hover, .nav-tabs.servicos>li.active.servicos>a:focus {
+	color:#0779ee;
+	border: 1px solid #0779ee;
+	border-bottom-color: transparent;
+	background:#FFF;
+}
 
 .list{
 	list-style:none;

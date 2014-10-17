@@ -61,17 +61,20 @@
 		</div>
 		<!-- fim topBar container -->
 		
-		<div class="container">				
-			<div class="row">
+		<div class="container">								
+			<div class="row">				
 				<div class="col-md-6">
 					<a href="index.html"><img class="brand" src="img/logo.png"/></a>
 				</div>					
 				<div class="col-md-6">
-					 <div class="pesquisa"><input type="text" name="pesquisa" placeholder="O que você deseja?"/></div>
+					 <div class="pesquisa">
+						<input type="text" name="pesquisa" placeholder="O que você deseja?"/>
+						<a class="pesquisa-avancada" href="resultados.html">Pesquisa Avançada</a>
+					 </div>						 
 				</div>
 			</div>										
 		</div>
-		<!-- fim header container -->			
+		<!-- fim header container -->				
 	</header>
 	<!-- fim header -->	
 	<div class="content">
@@ -106,28 +109,28 @@
 			
 			<div class="col-lg-6">
 				<!-- Nav tabs -->
-				<ul class="nav nav-tabs produto" role="tablist">
+				<ul class="nav nav-tabs servicos" role="tablist">
 				  <li class="active"><a href="#home" role="tab" data-toggle="tab">Detalhes</a></li>			
 				</ul>
 				<!-- Tab panes -->
-				<div class="tab-content tab-item">
+				<div class="tab-content tab-item minhas-ofertas servicos">
 				  <div class="tab-pane fade in active" id="home">
 						<ul class="list">
-							<li>Descrição resumida do item do desejo, com até cento e quarenta caracteres. Se for digitado texto maior que o permitido, não aparecerá aqui</li><br/>
+							<li>Descrição resumida do item do desejo, com até cento e quarenta caracteres. Se for digitado
+							texto maior que o permitido, não aparecerá aqui Pensando mais a longo prazo, a execução dos pontos do programa
+						pode nos levar a considerar a reestruturação dos níveis de motivação departamental.</li><br/>
 							<li><strong>Detalhe 1: </strong><span>Descrição do detalhe 1</span></li>
 							<li><strong>Detalhe 2: </strong><span>Descrição do detalhe 2</span></li>
-							<li><strong>Detalhe 3: </strong><span>Descrição do detalhe 3</span></li>
-							<li><strong>Detalhe 4: </strong><span>Descrição do detalhe 4</span></li>
+							<li><strong>Detalhe 3: </strong><span>Descrição do detalhe 3</span></li><br/>					
 						</ul>
-				  </div>
-				 
+				  </div>				
 				</div>
-			</div>
-		</div>	
+			</div>	
+		</div>
 	</div>
 	<div class="container">
 		<hr width="70%" />
-		<h2>Envie sua oferta</h2>
+		<h2 class="servicos">Envie sua oferta</h2>
 		<div class="row page-item">
 		  <form>
 			<div class="col-md-6"><label><input type="radio" id="exato" name="ofereco"> Vou oferecer o que se deseja</label></div>
@@ -229,55 +232,55 @@
 					<input class="btn btn-vermelho" type="submit" value="Cancelar"/>
 					<input class="btn btn-verde" type="submit" value="Enviar"/>							
 					
-				</form>		
-			</div>			
+					</form>		
+				</div>			
 		 </div>
 	</div>
 	
 	
 	<footer>
-		<div class="jumbotron">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						<h3>Sobre o TôQuerendo</h3>
-						<p>Pensando mais a longo prazo, a execução dos pontos do programa
-						pode nos levar a considerar a reestruturação dos níveis de motivação 
-						departamental.</p>
-						<p>O empenho em analisar a contínua expansão de nossa 
-						atividade exige a precisão e a definição dos índices pretendidos.
-						Pensando mais a longo prazo, a execução dos pontos</p>
-					</div>
-					<div class="col-lg-4">
-						<h3>Dúvidas? Fale com a gente</h3>
-						<input type="text" class="iptTxt" placeholder="Nome"/>
-						<input type="text" class="iptTxt" placeholder="Email"/>
-						<textarea rows="4" class="iptTxtA" placeholder="Digite sua mensagem"></textarea>
-						<input type="submit" class="btn btn-verde" value="Enviar"/>							
-						<input type="reset" class="btn btn-cinza" value="Limpar"/>
-					</div>
-					<div class="col-lg-4">
-						<h3>Encontre-nos na internet</h3>
-						<p>Pensando mais a longo prazo, a execução dos pontos do programa
-						pode nos levar a considerar a reestruturação dos níveis.</p>
-						<p>
-							<span class="PretoBranco"><a href="http://www.facebook.com"><img src="img/facebook.png"/></a></span>
-							<span class="PretoBranco"><a href="https://plus.google.com"><img src="img/google+.png"/></a></span>
-							<span class="PretoBranco"><a href="https://twitter.com/"><img src="img/twitter.png"/></a></span>
-							<span class="PretoBranco"><a href="https://br.linkedin.com/"><img src="img/linkedin.png"/></a></span>
-						</p>
-					</div>
+			<div class="jumbotron">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4">
+							<h3>Sobre o TôQuerendo</h3>
+							<p>Pensando mais a longo prazo, a execução dos pontos do programa
+							pode nos levar a considerar a reestruturação dos níveis de motivação 
+							departamental.</p>
+							<p>O empenho em analisar a contínua expansão de nossa 
+							atividade exige a precisão e a definição dos índices pretendidos.
+							Pensando mais a longo prazo, a execução dos pontos</p>
+						</div>
+						<div class="col-lg-4">
+							<h3>Dúvidas? Fale com a gente</h3>
+							<input type="text" class="iptTxt" placeholder="Nome"/>
+							<input type="text" class="iptTxt" placeholder="Email"/>
+							<textarea rows="4" class="iptTxtA" placeholder="Digite sua mensagem"></textarea>
+							<input type="submit" class="btn btn-verde" value="Enviar"/>							
+							<input type="reset" class="btn btn-cinza" value="Limpar"/>
+						</div>
+						<div class="col-lg-4">
+							<h3>Encontre-nos na internet</h3>
+							<p>Pensando mais a longo prazo, a execução dos pontos do programa
+							pode nos levar a considerar a reestruturação dos níveis.</p>
+							<p>
+								<span class="PretoBranco"><a href="http://www.facebook.com"><img src="img/facebook.png"/></a></span>
+								<span class="PretoBranco"><a href="https://plus.google.com"><img src="img/google+.png"/></a></span>
+								<span class="PretoBranco"><a href="https://twitter.com/"><img src="img/twitter.png"/></a></span>
+								<span class="PretoBranco"><a href="https://br.linkedin.com/"><img src="img/linkedin.png"/></a></span>
+							</p>
+						</div>
+					</div>		
 				</div>		
-			</div>		
-		</div>
-		<!-- fim jumbotron -->	
-		<div class="content copy-right">
-			<div class="container">
-				<a href="index.html"><img width="200px" alt="Logo TôQuerendo" src="img/logo.png" /></a>
-				<p>&copy; 2014 TôQuerendo - Todos os direitos reservados</p>
 			</div>
-		</div>
-	</footer>
+			<!-- fim jumbotron -->	
+			<div class="content copy-right">
+				<div class="container">
+					<a href="index.html"><img width="200px" alt="Logo TôQuerendo" src="img/logo.png" /></a>
+					<p>&copy; 2014 TôQuerendo - Todos os direitos reservados</p>
+				</div>
+			</div>
+		</footer>
      
 </body>
 </html>
