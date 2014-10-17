@@ -558,7 +558,9 @@ div.img-item {
     margin:0 auto;
 }
 .img-item img{
-	max-width:100%;
+	max-width:200px;
+	width:100%;	
+	max-height:150px;
 }
 .rodape-item{
 	color:#FFF;
